@@ -1,9 +1,22 @@
 <Project Sdk="Microsoft.NET.Sdk">
-
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <LangVersion>latest</LangVersion>
+	<!--Package options-->
+	<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+	<Version>0.0.1</Version>
+	<Authors>Vagab0nd</Authors>
+	<Company>Vagab0nd</Company>
+	<Description>.Net library that provides wrapper for AniDB API.</Description>
+	<PackageLicenseExpression></PackageLicenseExpression>
+	<PackageLicenseFile>LICENSE</PackageLicenseFile>
+	<PackageProjectUrl>https://github.com/Vagab0nd/AniDB.Api</PackageProjectUrl>
+	<RepositoryUrl>https://github.com/Vagab0nd/AniDB.Api</RepositoryUrl>
+	<RepositoryType>Git</RepositoryType>
+	<PackageTags>anidb api anime</PackageTags>
+	<PackageReadmeFile>README.md</PackageReadmeFile>
+	<PackageReleaseNotes>Initial release</PackageReleaseNotes>
   </PropertyGroup>
-
 </Project>
