@@ -5,7 +5,9 @@
 
 # ☂️ Coverage
 
-Coverage as of right now is ...
+Coverage as of right now is:
+ - [HTTP API](https://wiki.anidb.net/HTTP_API_Definition)
+ - [Titles dump](https://wiki.anidb.net/API#Anime_Titles)
 
 # ⚖ License
 
