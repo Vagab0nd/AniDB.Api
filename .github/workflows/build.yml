@@ -1,0 +1,35 @@
+# This workflow will build a .NET project
+# For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-net
+
+name: Build
+
+on:
+  push:
+    branches: [ "main", "release/*" ]
+  pull_request_target:
+    types: [assigned, opened, synchronize, reopened]
+  schedule:
+    - cron: '0 5 * * 0'
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v3
+      with:
+        dotnet-version: 6.0.x
+    - name: Restore dependencies
+      run: dotnet restore
+    - name: Build
+      run: dotnet build --no-restore
+    - name: Test
+      run: dotnet test --no-build --verbosity normal
+    - name: Publish to Nuget.org
+      if: startsWith(github.ref, 'refs/heads/release')
+      run: nuget push **\*.nupkg -Source 'https://api.nuget.org/v3/index.json' -ApiKey ${{secrets.NUGET_API_KEY}} --skip-duplicate
+    - name: Publish to GitHub
+      if: startsWith(github.ref, 'refs/heads/release')
+      run: nuget push **\*.nupkg -k ${{ secrets.GITHUB_TOKEN }} -s https://nuget.pkg.github.com/Vagab0nd/index.json --skip-duplicate
