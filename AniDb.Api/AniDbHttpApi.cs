@@ -20,6 +20,7 @@ namespace AniDb.Api
         public AniDbHttpApi()
         {
             FlurlHttp.ConfigureClientForUrl(BaseUri)
+                .WithHeader("Accept-Encoding", "gzip")
                 .WithSettings(settings =>
                 {
                     //TODO: add logging on debug.
@@ -36,6 +37,7 @@ namespace AniDb.Api
             return await BaseUri
                 .AppendQueryParam("request", "anime")
                 .AppendQueryParam("aid", animeId)
+                
                 .GetXmlAsync<Anime>(cancellationToken)
                 .ConfigureAwait(false);
         }
