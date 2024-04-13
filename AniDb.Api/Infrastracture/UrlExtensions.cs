@@ -1,0 +1,20 @@
+﻿using Flurl;
+
+namespace AniDb.Api.Infrastracture
+{
+    internal static class UrlExtensions
+    {
+        //TODO: Apply for separate registration
+        private const string ClientName = "mediabrowser";
+        private const int ClientVersion = 1;
+        private const int ProtocolVersion = 1;
+
+        public static Url AppendAniDbQueryParams(this Url url)
+        {
+            url.AppendQueryParam("client", ClientName);
+            url.AppendQueryParam("clientver", ClientVersion);
+            url.AppendQueryParam("protover", ProtocolVersion);
+            return url;
+        }
+    }
+}

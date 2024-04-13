@@ -13,10 +13,6 @@ namespace AniDb.Api
     {
 
         private const string BaseUri = "http://api.anidb.net:9001/httpapi";
-        //TODO: Apply for separate registration
-        private const string ClientName = "mediabrowser";
-        private const int ClientVersion = 1;
-        private const int ProtocolVersion = 1;
 
         public AniDbHttpApi()
         {
@@ -37,7 +33,8 @@ namespace AniDb.Api
         {
             return await BaseUri
                 .AppendQueryParam("request", "anime")
-                .AppendQueryParam("aid", animeId)              
+                .AppendQueryParam("aid", animeId)    
+                .AppendAniDbQueryParams()
                 .GetAsync(cancellationToken: cancellationToken)
                 .UnpackGzip()
                 .ReceiveXml<Anime>()
@@ -75,6 +72,7 @@ namespace AniDb.Api
                 .AppendQueryParam("request", "hints")
                 .AppendQueryParam("user", username)
                 .AppendQueryParam("password", password)
+                .AppendAniDbQueryParams()
                 .GetAsync(cancellationToken: cancellationToken)
                 .UnpackGzip()
                 .ReceiveXml<HintCollection>()
@@ -88,6 +86,7 @@ namespace AniDb.Api
                 .AppendQueryParam("request", "mylistsummary")
                 .AppendQueryParam("user", username)
                 .AppendQueryParam("password", password)
+                .AppendAniDbQueryParams()
                 .GetAsync(cancellationToken: cancellationToken)
                 .UnpackGzip()
                 .ReceiveXml<MyListSummary>()
