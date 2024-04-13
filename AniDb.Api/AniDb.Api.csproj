@@ -35,4 +35,7 @@
   		<PackagePath>\</PackagePath>
   	</None>
   </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Models\MainPage\" />
+  </ItemGroup>
 </Project>
