@@ -1,4 +1,5 @@
-﻿using AniDb.Api.Models.Anime;
+﻿using AniDb.Api.Infrastracture;
+using AniDb.Api.Models.Anime;
 using AniDb.Api.Models.Hints;
 using AniDb.Api.Models.MyListSummary;
 using Flurl;
@@ -36,9 +37,10 @@ namespace AniDb.Api
         {
             return await BaseUri
                 .AppendQueryParam("request", "anime")
-                .AppendQueryParam("aid", animeId)
-                
-                .GetXmlAsync<Anime>(cancellationToken)
+                .AppendQueryParam("aid", animeId)              
+                .GetAsync(cancellationToken: cancellationToken)
+                .UnpackGzip()
+                .ReceiveXml<Anime>()
                 .ConfigureAwait(false);
         }
 
@@ -73,7 +75,9 @@ namespace AniDb.Api
                 .AppendQueryParam("request", "hints")
                 .AppendQueryParam("user", username)
                 .AppendQueryParam("password", password)
-                .GetXmlAsync<HintCollection>(cancellationToken)
+                .GetAsync(cancellationToken: cancellationToken)
+                .UnpackGzip()
+                .ReceiveXml<HintCollection>()
                 .ConfigureAwait(false);
         }
 
@@ -84,7 +88,9 @@ namespace AniDb.Api
                 .AppendQueryParam("request", "mylistsummary")
                 .AppendQueryParam("user", username)
                 .AppendQueryParam("password", password)
-                .GetXmlAsync<MyListSummary>(cancellationToken)
+                .GetAsync(cancellationToken: cancellationToken)
+                .UnpackGzip()
+                .ReceiveXml<MyListSummary>()
                 .ConfigureAwait(false);
         }
     }
