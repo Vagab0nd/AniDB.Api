@@ -1,13 +1,16 @@
 ﻿using AniDb.Api.Models.Anime;
 using AniDb.Api.Models.Hints;
+using Flurl;
 using Flurl.Http;
+using Flurl.Http.Xml;
 
 namespace AniDb.Api
 {
+    /// <inheritdoc/>
     public class AniDbHttpApi : IAniDbHttpApi
     {
 
-        private const string BaseUrl = "http://api.anidb.net:9001/httpapi";
+        private const string BaseUri = "http://api.anidb.net:9001/httpapi";
         //TODO: Apply for separate registration
         private const string ClientName = "mediabrowser";
         private const int ClientVersion = 1;
@@ -15,48 +18,58 @@ namespace AniDb.Api
 
         public AniDbHttpApi()
         {
-            FlurlHttp.Clients.GetOrAdd(nameof(AniDbHttpApi), BaseUrl, builder =>
-            {
-
-                //TODO: Error logging on debug            
-            });
+            FlurlHttp.ConfigureClientForUrl(BaseUri)
+                .WithSettings(settings =>
+                {
+                    //TODO: add logging on debug.
+                });
         }
 
         public void Dispose()
         {
-            FlurlHttp.Clients.Clear();
         }
 
-        public Task<Anime> GetAnime(int animeId, CancellationToken cancellationToken = default)
+        /// <inheritdoc/>
+        public async Task<Anime> GetAnime(int animeId, CancellationToken cancellationToken = default)
         {
-            throw new NotImplementedException();
+            return await BaseUri
+                .AppendQueryParam("request", "anime")
+                .AppendQueryParam("aid", animeId)
+                .GetXmlAsync<Anime>(cancellationToken)
+                .ConfigureAwait(false);
         }
 
+        /// <inheritdoc/>
         public Task<string> GetHotAnime(CancellationToken cancellationToken = default)
         {
             throw new NotImplementedException();
         }
 
+        /// <inheritdoc/>
         public Task<string> GetMainPageData(CancellationToken cancellationToken = default)
         {
             throw new NotImplementedException();
         }
 
+        /// <inheritdoc/>
         public Task<string> GetRandomRecommendationAnime(CancellationToken cancellationToken = default)
         {
             throw new NotImplementedException();
         }
 
+        /// <inheritdoc/>
         public Task<string> GetRandomSimilarAnime(CancellationToken cancellationToken = default)
         {
             throw new NotImplementedException();
         }
 
+        /// <inheritdoc/>
         public Task<HintCollection> GetUserHints(string username, string password, CancellationToken cancellationToken = default)
         {
             throw new NotImplementedException();
         }
 
+        /// <inheritdoc/>
         public Task<string> GetUserMyListSummmary(string username, string password, CancellationToken cancellationToken = default)
         {
             throw new NotImplementedException();
