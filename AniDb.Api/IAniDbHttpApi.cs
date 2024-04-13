@@ -58,7 +58,7 @@ namespace AniDb.Api
         /// <param name="password"></param>
         /// <param name="cancellationToken"></param>
         /// <returns>List of recommended anime.</returns>
-        Task<HintContainer> GetUserHints(string username, string password, CancellationToken cancellationToken = default);
+        Task<HintCollection> GetUserHints(string username, string password, CancellationToken cancellationToken = default);
 
     }
 }

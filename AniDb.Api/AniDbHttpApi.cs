@@ -52,7 +52,7 @@ namespace AniDb.Api
             throw new NotImplementedException();
         }
 
-        public Task<HintContainer> GetUserHints(string username, string password, CancellationToken cancellationToken = default)
+        public Task<HintCollection> GetUserHints(string username, string password, CancellationToken cancellationToken = default)
         {
             throw new NotImplementedException();
         }
