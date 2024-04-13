@@ -7,6 +7,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AniDb.Api", "AniDb.Api\AniD
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{B23F3449-C1B1-4FDB-ABB0-A2A60CE318CE}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{D65F50F0-481F-4475-8E1A-036D7B985F66}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AniDb.Api.Test", "AniDb.Api.Test\AniDb.Api.Test.csproj", "{B9659A98-D8BF-4E39-BF9A-514C7D0BCFD4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,12 +21,17 @@ Global
 		{55DCA055-D5B7-4D57-9E67-A932A5B6AFB6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{55DCA055-D5B7-4D57-9E67-A932A5B6AFB6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{55DCA055-D5B7-4D57-9E67-A932A5B6AFB6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B9659A98-D8BF-4E39-BF9A-514C7D0BCFD4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B9659A98-D8BF-4E39-BF9A-514C7D0BCFD4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B9659A98-D8BF-4E39-BF9A-514C7D0BCFD4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B9659A98-D8BF-4E39-BF9A-514C7D0BCFD4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{55DCA055-D5B7-4D57-9E67-A932A5B6AFB6} = {B23F3449-C1B1-4FDB-ABB0-A2A60CE318CE}
+		{B9659A98-D8BF-4E39-BF9A-514C7D0BCFD4} = {D65F50F0-481F-4475-8E1A-036D7B985F66}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {3158282C-8D69-4344-B3FC-09AD33541DFC}
