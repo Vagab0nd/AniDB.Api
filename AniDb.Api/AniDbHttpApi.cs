@@ -64,9 +64,14 @@ namespace AniDb.Api
         }
 
         /// <inheritdoc/>
-        public Task<HintCollection> GetUserHints(string username, string password, CancellationToken cancellationToken = default)
+        public async Task<HintCollection> GetUserHints(string username, string password, CancellationToken cancellationToken = default)
         {
-            throw new NotImplementedException();
+            return await BaseUri
+                .AppendQueryParam("request", "hints")
+                .AppendQueryParam("user", username)
+                .AppendQueryParam("password", password)
+                .GetXmlAsync<HintCollection>(cancellationToken)
+                .ConfigureAwait(false);
         }
 
         /// <inheritdoc/>
