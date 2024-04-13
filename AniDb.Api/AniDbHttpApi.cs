@@ -35,9 +35,7 @@ namespace AniDb.Api
                 .AppendQueryParam("request", "anime")
                 .AppendQueryParam("aid", animeId)    
                 .AppendAniDbQueryParams()
-                .GetAsync(cancellationToken: cancellationToken)
-                .UnpackGzip()
-                .ReceiveXml<Anime>()
+                .GetXmlAsync<Anime>(cancellationToken)
                 .ConfigureAwait(false);
         }
 
@@ -73,9 +71,7 @@ namespace AniDb.Api
                 .AppendQueryParam("user", username)
                 .AppendQueryParam("password", password)
                 .AppendAniDbQueryParams()
-                .GetAsync(cancellationToken: cancellationToken)
-                .UnpackGzip()
-                .ReceiveXml<HintCollection>()
+                .GetXmlAsync<HintCollection>(cancellationToken)
                 .ConfigureAwait(false);
         }
 
@@ -87,9 +83,7 @@ namespace AniDb.Api
                 .AppendQueryParam("user", username)
                 .AppendQueryParam("password", password)
                 .AppendAniDbQueryParams()
-                .GetAsync(cancellationToken: cancellationToken)
-                .UnpackGzip()
-                .ReceiveXml<MyListSummary>()
+                .GetXmlAsync<MyListSummary>(cancellationToken)
                 .ConfigureAwait(false);
         }
     }

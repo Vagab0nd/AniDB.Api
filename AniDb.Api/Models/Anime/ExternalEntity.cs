@@ -8,7 +8,7 @@ namespace AniDb.Api.Models.Anime
         public List<string> Identifier { get; set; }
 
         [XmlElement(ElementName = "url")]
-        public Uri Url { get; set; }
+        public string Url { get; set; }
     }
 
 
