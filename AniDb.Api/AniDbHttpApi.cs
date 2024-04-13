@@ -1,5 +1,6 @@
 ﻿using AniDb.Api.Models.Anime;
 using AniDb.Api.Models.Hints;
+using AniDb.Api.Models.MyListSummary;
 using Flurl;
 using Flurl.Http;
 using Flurl.Http.Xml;
@@ -75,9 +76,14 @@ namespace AniDb.Api
         }
 
         /// <inheritdoc/>
-        public Task<string> GetUserMyListSummmary(string username, string password, CancellationToken cancellationToken = default)
+        public async Task<MyListSummary> GetUserMyListSummmary(string username, string password, CancellationToken cancellationToken = default)
         {
-            throw new NotImplementedException();
+            return await BaseUri
+                .AppendQueryParam("request", "mylistsummary")
+                .AppendQueryParam("user", username)
+                .AppendQueryParam("password", password)
+                .GetXmlAsync<MyListSummary>(cancellationToken)
+                .ConfigureAwait(false);
         }
     }
 }

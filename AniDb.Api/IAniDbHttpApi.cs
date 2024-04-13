@@ -1,5 +1,6 @@
 ﻿using AniDb.Api.Models.Anime;
 using AniDb.Api.Models.Hints;
+using AniDb.Api.Models.MyListSummary;
 
 namespace AniDb.Api
 {
@@ -49,7 +50,7 @@ namespace AniDb.Api
         /// <param name="password"></param>
         /// <param name="cancellationToken"></param>
         /// <returns>User's summarized anime list.</returns>
-        Task<string> GetUserMyListSummmary(string username, string password, CancellationToken cancellationToken = default);
+        Task<MyListSummary> GetUserMyListSummmary(string username, string password, CancellationToken cancellationToken = default);
 
         /// <summary>
         /// Returns a list of unwatched titles and a calculated rating, based upon existing votes. The list may be empty if the requested user is very new, has not voted for enough titles, or has very stale (a number of months old) data. Hints are calculated once a day.
