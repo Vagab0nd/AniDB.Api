@@ -11,8 +11,11 @@ namespace AniDb.Api.Models.MyListSummary
         public int State { get; set; }
 
         public int EpisodeCount { get; set; }
+
         public int SeenCount { get; set; }
+
         public int SpecialCount { get; set; }
+
         public int SeenSpecialCount { get; set; }
     }
 }
