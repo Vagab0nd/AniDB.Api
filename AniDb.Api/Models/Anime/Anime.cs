@@ -1,49 +1,72 @@
-﻿using System.Xml.Serialization;
+﻿using AniDb.Api.Models.Anime;
+using System.Xml.Serialization;
 
-namespace AniDb.Api.Models.Anime
+[XmlRoot(ElementName = "anime")]
+public record Anime
 {
+    [XmlAttribute(AttributeName = "id")]
+    public string Id { get; set; }
 
-    [XmlRoot(ElementName = "anime")]
-    public record Anime
-    {
-        [XmlAttribute(AttributeName = "id")]
-        public string Id { get; set; }
+    [XmlAttribute(AttributeName = "restricted")]
+    public bool Restricted { get; set; }
 
-        [XmlAttribute(AttributeName = "restricted")]
-        public bool Restricted { get; set; }
+    [XmlElement(ElementName = "type")]
+    public string Type { get; set; }
 
-        public string Type { get; set; }
+    [XmlElement(ElementName = "episodecount")]
+    public int EpisodeCount { get; set; }
 
-        public int EpisodeCount { get; set; }
+    [XmlElement(ElementName = "startdate")]
+    public DateTime StartDate { get; set; }
 
-        public DateTime StartDate { get; set; }
+    [XmlElement(ElementName = "enddate")]
+    public DateTime EndDate { get; set; }
 
-        public DateTime EndDate { get; set; }
+    [XmlArray(ElementName = "titles")]
+    [XmlArrayItem(ElementName = "title")]
+    public Title[] Titles { get; set; }
 
-        public List<Title> Titles { get; set; }
+    [XmlArray(ElementName = "relatedanime")]
+    [XmlArrayItem(ElementName = "anime")]
+    public AnimeRelated[] RelatedAnime { get; set; }
 
-        public List<AnimeRelated> RelatedAnime { get; set; }
+    [XmlArray(ElementName = "similaranime")]
+    [XmlArrayItem(ElementName = "anime")]
+    public AnimeSimilar[] SimilarAnime { get; set; }
 
-        public List<AnimeSimilar> SimilarAnime { get; set; }
+    [XmlArray(ElementName = "recommendations")]
+    [XmlArrayItem(ElementName = "recommendation")]
+    public Recommendation[] Recommendations { get; set; }
 
-        public List<Recommendation> Recommendations { get; set; }
+    [XmlElement(ElementName = "url")]
+    public string Url { get; set; }
 
-        public string Url { get; set; }
+    [XmlArray(ElementName = "creators")]
+    [XmlArrayItem(ElementName = "name")]
+    public Creator[] Creators { get; set; }
 
-        public List<Creator> Creators { get; set; }
+    [XmlElement(ElementName = "description")]
+    public string Description { get; set; }
 
-        public string Description { get; set; }
+    [XmlElement(ElementName = "ratings")]
+    public Ratings Ratings { get; set; }
 
-        public Ratings Ratings { get; set; }
+    [XmlElement(ElementName = "picture")]
+    public string Picture { get; set; }
 
-        public string Picture { get; set; }
+    [XmlArray(ElementName = "resources")]
+    [XmlArrayItem(ElementName = "resource")]
+    public Resource[] Resources { get; set; }
 
-        public List<Resource> Resources { get; set; }
+    [XmlArray(ElementName = "tags")]
+    [XmlArrayItem(ElementName = "tag")]
+    public Tag[] Tags { get; set; }
 
-        public List<Tag> Tags { get; set; }
+    [XmlArray(ElementName = "characters")]
+    [XmlArrayItem(ElementName = "character")]
+    public Character[] Characters { get; set; }
 
-        public List<Character> Characters { get; set; }
-
-        public List<Episode> Episodes { get; set; }
-    }
+    [XmlArray(ElementName = "episodes")]
+    [XmlArrayItem(ElementName = "episode")]
+    public Episode[] Episodes { get; set; }
 }

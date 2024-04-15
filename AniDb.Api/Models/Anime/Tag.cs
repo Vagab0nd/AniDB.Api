@@ -25,14 +25,13 @@ namespace AniDb.Api.Models.Anime
         [XmlAttribute(AttributeName = "update")]
         public DateTime Update { get; set; }
 
+        [XmlElement(ElementName = "name")]
         public string Name { get; set; }
 
+        [XmlElement(ElementName = "description")]
         public string Description { get; set; }
 
+        [XmlElement(ElementName = "picurl")]
         public string PicUrl { get; set; }
     }
-
-
-
-
 }

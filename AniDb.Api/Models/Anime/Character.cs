@@ -13,22 +13,25 @@ namespace AniDb.Api.Models.Anime
         [XmlAttribute(AttributeName = "update")]
         public string Update { get; set; }
 
+        [XmlElement(ElementName = "rating")]
         public Rating Rating { get; set; }
 
+        [XmlElement(ElementName = "name")]
         public string Name { get; set; }
 
+        [XmlElement(ElementName = "gender")]
         public string Gender { get; set; }
 
-        public string Charactertype { get; set; }
+        [XmlElement(ElementName = "charactertype")]
+        public string CharacterType { get; set; }
 
+        [XmlElement(ElementName = "description")]
         public string Description { get; set; }
 
+        [XmlElement(ElementName = "picture")]
         public string Picture { get; set; }
 
+        [XmlElement(ElementName = "seiyuu")]
         public Seiyuu Seiyuu { get; set; }
     }
-
-
-
-
 }
