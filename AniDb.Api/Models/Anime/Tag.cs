@@ -32,6 +32,6 @@ namespace AniDb.Api.Models.Anime
         public string Description { get; set; }
 
         [XmlElement(ElementName = "picurl")]
-        public string PicUrl { get; set; }
+        public string PictureUrl { get; set; }
     }
 }

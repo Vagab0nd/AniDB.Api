@@ -8,7 +8,7 @@ namespace AniDb.Api.Models.Anime
         public string Type { get; set; }
 
         [XmlAttribute(AttributeName = "uid")]
-        public string Uid { get; set; }
+        public string UserId { get; set; }
 
         [XmlText]
         public string Text { get; set; }

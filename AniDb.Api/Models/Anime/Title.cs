@@ -5,7 +5,7 @@ namespace AniDb.Api.Models.Anime
     public record Title
     {
         [XmlAttribute(AttributeName = "lang")]
-        public string Lang { get; set; }
+        public string Language { get; set; }
 
         [XmlAttribute(AttributeName = "type")]
         public string Type { get; set; }
