@@ -16,7 +16,7 @@ namespace AniDb.Api
 
         public AniDbHttpApi()
         {
-            FlurlHttp.ConfigureClientForUrl(BaseUri)
+            FlurlHttp.Clients.GetOrAdd(nameof(AniDbHttpApi), BaseUri)
                 .WithHeader("Accept-Encoding", "gzip")
                 .WithSettings(settings =>
                 {
