@@ -14,7 +14,7 @@ namespace AniDb.Api.Models.Anime
         public string Update { get; set; }
 
         [XmlElement(ElementName = "rating")]
-        public Rating Rating { get; set; }
+        public CharacterRating Rating { get; set; }
 
         [XmlElement(ElementName = "name")]
         public string Name { get; set; }
