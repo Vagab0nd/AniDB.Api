@@ -1,0 +1,8 @@
+﻿<mylistsummary uid="40237">
+    <mylistitem aid="5841" state="2">
+        <episodecount>22</episodecount>
+        <seencount>22</seencount>
+        <specialcount>9</specialcount>
+        <seenspecialcount>4</seenspecialcount>
+    </mylistitem>
+</mylistsummary>

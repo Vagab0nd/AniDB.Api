@@ -25,5 +25,21 @@ namespace AniDb.Api.Test
             //assert
             response.Should().NotBeNull();
         }
+
+        [TestMethod]
+        public async Task GetUserMyListSummmary_should_deserialize_response_xml()
+        {
+            //arrange
+            using var httpTest = new HttpTest();
+            var xmlResponse = ResourcesHelper.GetStringResource("MyListSummaryResponse.txt");
+            httpTest.RespondWith(xmlResponse);
+
+            //act
+            var response = await this.target.GetUserMyListSummmary("username", "password");
+
+            //assert
+            response.Should().NotBeNull();
+        }
+
     }
 }

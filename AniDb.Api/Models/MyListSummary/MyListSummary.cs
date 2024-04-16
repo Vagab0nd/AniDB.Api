@@ -8,8 +8,7 @@ namespace AniDb.Api.Models.MyListSummary
         [XmlAttribute(AttributeName = "uid")]
         public int UserId { get; set; }
 
-        [XmlArray("mylistitems")]
-        [XmlArrayItem("mylistitem")]
+        [XmlElement("mylistitem")]
         public List<MyListItem> MyListItems { get; set; }
     }
 }

@@ -6,8 +6,10 @@
   </PropertyGroup>
   <ItemGroup>
     <None Remove="Resources\AnimeResponse.txt" />
+    <None Remove="Resources\MyListSummaryResponse.txt" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Resources\MyListSummaryResponse.txt" />
     <EmbeddedResource Include="Resources\AnimeResponse.txt" />
   </ItemGroup>
   <ItemGroup>
