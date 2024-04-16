@@ -20,5 +20,18 @@ namespace AniDb.Api.Test
             //assert
             response.Should().NotBeNull();
         }
+
+        [TestMethod]
+        public async Task GetUserHints_should_return_hints()
+        {
+            //act
+            var response = await this.target.GetUserHints(
+                this.TestContext.Properties["Username"]?.ToString(), 
+                this.TestContext.Properties["Password"]?.ToString()
+                );
+
+            //assert
+            response.Should().NotBeNull();
+        }
     }
 }

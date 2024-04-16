@@ -1,14 +1,15 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
-    <Nullable>enable</Nullable>
     <IsPackable>false</IsPackable>
   </PropertyGroup>
   <ItemGroup>
     <None Remove="Resources\AnimeResponse.txt" />
+    <None Remove="Resources\HintsResponse.txt" />
     <None Remove="Resources\MyListSummaryResponse.txt" />
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Resources\HintsResponse.txt" />
     <EmbeddedResource Include="Resources\MyListSummaryResponse.txt" />
     <EmbeddedResource Include="Resources\AnimeResponse.txt" />
   </ItemGroup>

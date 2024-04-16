@@ -68,7 +68,9 @@ namespace AniDb.Api
             return await BaseUri
                 .AppendQueryParam("request", "hints")
                 .AppendQueryParam("user", username)
-                .AppendQueryParam("password", password)
+                .AppendQueryParam("pass", password)
+                .AppendQueryParam("type", 1)
+                .AppendQueryParam("output", "xml")
                 .AppendAniDbQueryParams()
                 .GetXmlAsync<HintCollection>(cancellationToken)
                 .ConfigureAwait(false);
