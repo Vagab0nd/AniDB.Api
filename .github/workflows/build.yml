@@ -26,7 +26,7 @@ jobs:
     - name: Build
       run: dotnet build --no-restore
     - name: Test
-      run: dotnet test --no-build --verbosity normal
+      run: dotnet test --no-build --verbosity normal -- TestRunParameters.Parameter\(name=\"Login\", value=\"${{ secrets.ANI_USERNAME }}\"\) -- TestRunParameters.Parameter\(name=\"Pass\", value=\"${{ secrets.ANI_PASS }}\"\)  
     - name: Publish to Nuget.org
       if: startsWith(github.ref, 'refs/heads/release')
       run: nuget push **\*.nupkg -Source 'https://api.nuget.org/v3/index.json' -ApiKey ${{secrets.NUGET_API_KEY}} --skip-duplicate
