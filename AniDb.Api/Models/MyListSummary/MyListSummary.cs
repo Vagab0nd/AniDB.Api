@@ -9,6 +9,6 @@ namespace AniDb.Api.Models.MyListSummary
         public int UserId { get; set; }
 
         [XmlElement("mylistitem")]
-        public List<MyListItem> MyListItems { get; set; }
+        public MyListItem[] MyListItems { get; set; }
     }
 }
