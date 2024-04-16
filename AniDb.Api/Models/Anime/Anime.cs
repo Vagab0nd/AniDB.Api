@@ -5,7 +5,7 @@ using System.Xml.Serialization;
 public record Anime
 {
     [XmlAttribute(AttributeName = "id")]
-    public string Id { get; set; }
+    public string AnimeId { get; set; }
 
     [XmlAttribute(AttributeName = "restricted")]
     public bool Restricted { get; set; }

@@ -5,7 +5,7 @@ namespace AniDb.Api.Models.Anime
     public record Tag
     {
         [XmlAttribute(AttributeName = "id")]
-        public int Id { get; set; }
+        public int TagId { get; set; }
 
         [XmlAttribute(AttributeName = "parentid")]
         public int ParentId { get; set; }

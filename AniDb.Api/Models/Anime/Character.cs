@@ -5,7 +5,7 @@ namespace AniDb.Api.Models.Anime
     public record Character
     {
         [XmlAttribute(AttributeName = "id")]
-        public int Id { get; set; }
+        public int CharacterId { get; set; }
 
         [XmlAttribute(AttributeName = "type")]
         public string Type { get; set; }

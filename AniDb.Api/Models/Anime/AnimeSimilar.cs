@@ -5,7 +5,7 @@ namespace AniDb.Api.Models.Anime
     public record AnimeSimilar
     {
         [XmlAttribute(AttributeName = "id")]
-        public string Id { get; set; }
+        public string AnimeId { get; set; }
 
         [XmlAttribute(AttributeName = "approval")]
         public int Approval { get; set; }

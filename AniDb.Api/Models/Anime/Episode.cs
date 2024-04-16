@@ -5,10 +5,10 @@ namespace AniDb.Api.Models.Anime
     public record Episode
     {
         [XmlAttribute(AttributeName = "id")]
-        public int Id { get; set; }
+        public int EpisodeId { get; set; }
 
         [XmlAttribute(AttributeName = "length")]
-        public string Length { get; set; }
+        public string PlayLength { get; set; }
 
         [XmlAttribute(AttributeName = "update")]
         public string Update { get; set; }
