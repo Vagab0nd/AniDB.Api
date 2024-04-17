@@ -350,3 +350,5 @@ MigrationBackup/
 .ionide/
 /Crunchyroll.Api.Test/settings.runsettings
 /AniDb.Api.Test/settings.runsettings
+/AniDb.Api.Test/Resources/anime-titles.xml
+/AniDb.Api.Test/Resources/anime-titles.xml.gz
