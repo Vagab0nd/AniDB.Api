@@ -16,10 +16,11 @@ namespace AniDb.Api
         public AniDbHttpApi()
         {
             FlurlHttp.Clients.GetOrAdd(nameof(AniDbHttpApi), BaseUri)
-                .WithHeader("Accept-Encoding", "gzip")
+                .WithHeader("Accept-Encoding", "gzip")                
                 .WithSettings(settings =>
-                {
+                {                 
                     //TODO: add logging on debug.
+                    //TODO: rate limitting - request per 2s
                 });
         }
 
