@@ -1,6 +1,6 @@
 ﻿using System.Xml.Serialization;
 
-namespace AniDb.Api.Models.Anime
+namespace AniDb.Api.Models.Common
 {
     public record Title
     {
