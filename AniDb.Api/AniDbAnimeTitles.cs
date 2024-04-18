@@ -11,7 +11,7 @@ namespace AniDb.Api
 
         public AniDbAnimeTitles()
         {
-            FlurlHttp.Clients.GetOrAdd(nameof(AniDbHttpApi), BaseUri)
+           FlurlHttp.Clients.GetOrAdd(nameof(AniDbAnimeTitles), BaseUri)               
                 .WithHeader("Accept-Encoding", "gzip")
                 .WithSettings(settings =>
                 {
