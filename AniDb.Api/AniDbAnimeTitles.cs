@@ -16,7 +16,7 @@ namespace AniDb.Api
                 .WithSettings(settings =>
                 {
                     //TODO: add logging on debug.
-                    //TODO: rate limitting - request per 2s
+                    //TODO: rate limitting - 1 per day
                 });
         }
 
