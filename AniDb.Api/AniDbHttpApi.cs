@@ -15,12 +15,16 @@ namespace AniDb.Api
 
         public AniDbHttpApi()
         {
-            FlurlHttp.Clients.GetOrAdd(nameof(AniDbHttpApi), BaseUri)
+            FlurlHttp.Clients
+                .GetOrAdd(nameof(AniDbHttpApi), BaseUri, builder =>
+                {
+                    static RateLimitingHandler rateLimittingHandlerFactory() => new(TimeSpan.FromSeconds(2), 1);
+                    builder.AddMiddleware(rateLimittingHandlerFactory);
+                })
                 .WithHeader("Accept-Encoding", "gzip")                
                 .WithSettings(settings =>
-                {                 
+                {
                     //TODO: add logging on debug.
-                    //TODO: rate limitting - request per 2s
                 });
         }
 
