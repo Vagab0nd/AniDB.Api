@@ -4,6 +4,6 @@ namespace AniDb.Api
 {
     public interface IAniDbAnimeTitles
     {
-        AnimeTitlesCollection GetAnimeTitles();
+        Task<AnimeTitlesCollection> GetAnimeTitles(CancellationToken cancellationToken = default);
     }
 }
