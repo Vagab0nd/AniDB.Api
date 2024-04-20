@@ -1,4 +1,5 @@
-﻿using AniDb.Api.Models.Titles;
+﻿using AniDb.Api.Infrastracture;
+using AniDb.Api.Models.Titles;
 using Flurl;
 using Flurl.Http;
 using Flurl.Http.Xml;
@@ -11,12 +12,16 @@ namespace AniDb.Api
 
         public AniDbAnimeTitles()
         {
-           FlurlHttp.Clients.GetOrAdd(nameof(AniDbAnimeTitles), BaseUri)               
+           FlurlHttp.Clients
+                .GetOrAdd(nameof(AniDbAnimeTitles), BaseUri, builder =>
+                {
+                    static RateLimitingHandler rateLimittingHandlerFactory() => new(TimeSpan.FromDays(1), 1); // 1req/1day
+                    builder.AddMiddleware(rateLimittingHandlerFactory);
+                })             
                 .WithHeader("Accept-Encoding", "gzip")
                 .WithSettings(settings =>
                 {
                     //TODO: add logging on debug.
-                    //TODO: rate limitting - 1 per day
                 });
         }
 
