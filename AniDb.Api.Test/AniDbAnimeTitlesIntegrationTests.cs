@@ -1,7 +1,5 @@
 using FluentAssertions;
-using Flurl.Http.Testing;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using System;
 using System.Threading.Tasks;
 
 namespace AniDb.Api.Test
