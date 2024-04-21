@@ -8,7 +8,7 @@ namespace AniDb.Api
 {
     public class AniDbAnimeTitles : IAniDbAnimeTitles
     {
-        private readonly string BaseUri = "http://anidb.net/api";
+        private readonly string BaseUri = "https://anidb.net/api";
 
         /// <summary>
         /// Constructor for testing purposes. AniDB limits heavilly number of calls to anime titles dump.
@@ -27,7 +27,7 @@ namespace AniDb.Api
                     static RateLimitingHandler rateLimittingHandlerFactory() => new(TimeSpan.FromDays(1), 1); // 1req/1day
                     builder.AddMiddleware(rateLimittingHandlerFactory);
                 })             
-                .WithHeader("Accept-Encoding", "gzip")
+                //.WithHeader("Accept-Encoding", "gzip")
                 .WithSettings(settings =>
                 {
                     //TODO: add logging on debug.
@@ -36,8 +36,9 @@ namespace AniDb.Api
 
         public async Task<AnimeTitlesCollection> GetAnimeTitles(CancellationToken cancellationToken = default)
         {
-            return await this.BaseUri                
-                .AppendPathSegment("anime-titles.xml.gz")
+            return await this.BaseUri      
+                //TODO: Switch to gzip endpoint.
+                .AppendPathSegment("animetitles.xml")
                 .GetXmlAsync<AnimeTitlesCollection>(cancellationToken)
                 .ConfigureAwait(false);
         }
