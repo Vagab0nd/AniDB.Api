@@ -20,19 +20,22 @@ namespace AniDb.Api
         }
 
         public AniDbAnimeTitles()
-        {
-            static RateLimitingHandler rateLimittingHandlerFactory() => new(TimeSpan.FromDays(1), 1); // 1req/1day
-            FlurlHttp.ConfigureClientForUrl("https://anidb.net")
-                 .AddMiddleware(rateLimittingHandlerFactory)
-                 .WithHeaders(new
-                 {
-                     Accept_Encoding = "gzip",
-                     User_Agent = "Flurl"
-                 })
-                 .WithSettings(settings =>
-                 {
-                     //TODO: add logging on debug.
-                 });
+        {            
+            FlurlHttpExtensions.TryConfigureClientForUrl("https://anidb.net", builder =>
+            {
+                static RateLimitingHandler rateLimittingHandlerFactory() => new(TimeSpan.FromDays(1), 1); // 1req/1day
+                builder
+                    .AddMiddleware(rateLimittingHandlerFactory)
+                    .WithHeaders(new
+                    {
+                        Accept_Encoding = "gzip",
+                        User_Agent = "Flurl"
+                    })
+                    .WithSettings(settings =>
+                    {
+                        //TODO: add logging on debug.
+                    });
+            });
         }
 
         public async Task<AnimeTitlesCollection> GetAnimeTitles(CancellationToken cancellationToken = default)

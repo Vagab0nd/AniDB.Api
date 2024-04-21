@@ -15,14 +15,16 @@ namespace AniDb.Api
 
         public AniDbHttpApi()
         {
-            static RateLimitingHandler rateLimittingHandlerFactory() => new(TimeSpan.FromSeconds(2), 1); // 1req/2s
-            FlurlHttp.ConfigureClientForUrl("http://api.anidb.net:9001")
-                .AddMiddleware(rateLimittingHandlerFactory)
-                .WithHeader("Accept-Encoding", "gzip")                
-                .WithSettings(settings =>
-                {
-                    //TODO: add logging on debug.
-                });
+            FlurlHttpExtensions.TryConfigureClientForUrl("http://api.anidb.net:9001", builder => {
+                static RateLimitingHandler rateLimittingHandlerFactory() => new(TimeSpan.FromSeconds(2), 1); // 1req/2s
+                builder
+                    .AddMiddleware(rateLimittingHandlerFactory)
+                    .WithHeader("Accept-Encoding", "gzip")
+                    .WithSettings(settings =>
+                    {
+                        //TODO: add logging on debug.
+                    });               
+            });
         }
 
         public void Dispose()
