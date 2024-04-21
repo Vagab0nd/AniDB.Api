@@ -13,5 +13,15 @@ namespace AniDb.Api.Test.Resources
             using StreamReader reader = new(stream);
             return reader.ReadToEnd();
         }
+        public static byte[] GetByteResource(string fileName)
+        {
+            var assembly = Assembly.GetExecutingAssembly();
+            using Stream stream = assembly.GetManifestResourceStream($"AniDb.Api.Test.Resources.{fileName}") ?? throw new InvalidOperationException($"File {fileName} not found.");
+            using (MemoryStream memoryStream = new MemoryStream())
+            {
+                stream.CopyTo(memoryStream);
+                return memoryStream.ToArray();
+            }
+        }
     }
 }

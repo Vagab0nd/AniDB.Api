@@ -15,12 +15,9 @@ namespace AniDb.Api
 
         public AniDbHttpApi()
         {
-            FlurlHttp.Clients
-                .GetOrAdd(nameof(AniDbHttpApi), BaseUri, builder =>
-                {
-                    static RateLimitingHandler rateLimittingHandlerFactory() => new(TimeSpan.FromSeconds(2), 1);
-                    builder.AddMiddleware(rateLimittingHandlerFactory);
-                })
+            static RateLimitingHandler rateLimittingHandlerFactory() => new(TimeSpan.FromSeconds(2), 1); // 1req/2s
+            FlurlHttp.ConfigureClientForUrl("http://api.anidb.net:9001")
+                .AddMiddleware(rateLimittingHandlerFactory)
                 .WithHeader("Accept-Encoding", "gzip")                
                 .WithSettings(settings =>
                 {

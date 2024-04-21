@@ -1,4 +1,5 @@
 ﻿using AniDb.Api.Models.Anime;
+using AniDb.Api.Models.Common;
 using System.Xml.Serialization;
 
 [XmlRoot(ElementName = "anime")]

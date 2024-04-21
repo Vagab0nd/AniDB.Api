@@ -1,4 +1,5 @@
 ﻿using System.Xml.Serialization;
+using AniDb.Api.Models.Common;
 
 namespace AniDb.Api.Models.Anime
 {
