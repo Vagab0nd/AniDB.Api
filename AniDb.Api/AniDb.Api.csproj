@@ -7,7 +7,7 @@
 	<NoWarn>$(NoWarn);CS8618</NoWarn>
 	<!--Package options-->
 	<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-	<Version>0.0.1</Version>
+	<Version>0.0.2</Version>
 	<Authors>Vagab0nd</Authors>
 	<Company>Vagab0nd</Company>
 	<Description>.Net library that provides wrapper for AniDB API.</Description>
@@ -18,7 +18,7 @@
 	<RepositoryType>Git</RepositoryType>
 	<PackageTags>anidb api anime</PackageTags>
 	<PackageReadmeFile>README.md</PackageReadmeFile>
-	<PackageReleaseNotes>Initial release</PackageReleaseNotes>
+	<PackageReleaseNotes>Add anime titles dump support</PackageReleaseNotes>
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="Flurl.Http" Version="4.0.2" />
