@@ -4,7 +4,7 @@ using System.Threading.Tasks;
 
 namespace AniDb.Api.Test
 {
-    [TestClass]
+    [TestClass, Ignore("Api rate limitted.")]
     public class AniDbAnimeTitlesIntegrationTests
     {
         private readonly IAniDbAnimeTitles target = new AniDbAnimeTitles();
