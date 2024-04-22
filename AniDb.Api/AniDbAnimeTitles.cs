@@ -8,20 +8,11 @@ namespace AniDb.Api
 {
     public class AniDbAnimeTitles : IAniDbAnimeTitles
     {
-        private readonly string BaseUri = "https://anidb.net/api";
-
-        /// <summary>
-        /// Constructor for testing purposes. AniDB limits heavilly number of calls to anime titles dump.
-        /// </summary>
-        /// <param name="baseUri"></param>
-        internal AniDbAnimeTitles(string baseUri) : this()
-        {
-            this.BaseUri = baseUri;
-        }
+        private const string BaseUri = "https://anidb.net/api";
 
         public AniDbAnimeTitles()
         {
-            FlurlHttpExtensions.TryConfigureClientForUrl("https://anidb.net", builder =>
+            FlurlHttpExtensions.TryConfigureClientForUrl(BaseUri, builder =>
             {
                 static RateLimitingHandler rateLimittingHandlerFactory() => new(TimeSpan.FromDays(1), 1); // 1req/1day
                 builder
