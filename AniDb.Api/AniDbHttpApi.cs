@@ -15,7 +15,7 @@ namespace AniDb.Api
 
         public AniDbHttpApi()
         {
-            FlurlHttpExtensions.TryConfigureClientForUrl("http://api.anidb.net:9001", builder => {
+            FlurlHttpExtensions.TryConfigureClientForUrl(BaseUri, builder => {
                 static RateLimitingHandler rateLimittingHandlerFactory() => new(TimeSpan.FromSeconds(2), 1); // 1req/2s
                 builder
                     .AddMiddleware(rateLimittingHandlerFactory)
