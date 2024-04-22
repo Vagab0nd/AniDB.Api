@@ -20,7 +20,7 @@ namespace AniDb.Api
         }
 
         public AniDbAnimeTitles()
-        {            
+        {
             FlurlHttpExtensions.TryConfigureClientForUrl("https://anidb.net", builder =>
             {
                 static RateLimitingHandler rateLimittingHandlerFactory() => new(TimeSpan.FromDays(1), 1); // 1req/1day
