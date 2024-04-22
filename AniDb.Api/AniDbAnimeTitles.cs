@@ -31,7 +31,7 @@ namespace AniDb.Api
 
         public async Task<AnimeTitlesCollection> GetAnimeTitles(CancellationToken cancellationToken = default)
         {
-            return await this.BaseUri      
+            return await BaseUri      
                 //TODO: Switch to gzip endpoint.
                 .AppendPathSegment("animetitles.xml")
                 .GetXmlAsync<AnimeTitlesCollection>(cancellationToken)
