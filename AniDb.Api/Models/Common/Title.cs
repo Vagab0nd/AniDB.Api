@@ -13,8 +13,4 @@ namespace AniDb.Api.Models.Common
         [XmlText]
         public string Text { get; set; }
     }
-
-
-
-
 }

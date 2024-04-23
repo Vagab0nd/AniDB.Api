@@ -17,7 +17,4 @@ namespace AniDb.Api.Models.Anime
         public string Text { get; set; }
     }
 
-
-
-
 }

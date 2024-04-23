@@ -10,8 +10,4 @@ namespace AniDb.Api.Models.Anime
         [XmlElement(ElementName = "externalentity")]
         public ExternalEntity ExternalEntity { get; set; }
     }
-
-
-
-
 }

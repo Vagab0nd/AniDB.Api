@@ -10,8 +10,4 @@ namespace AniDb.Api.Models.Anime
         [XmlElement(ElementName = "url")]
         public string Url { get; set; }
     }
-
-
-
-
 }

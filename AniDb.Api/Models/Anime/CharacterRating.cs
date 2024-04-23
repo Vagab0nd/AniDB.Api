@@ -10,8 +10,4 @@ namespace AniDb.Api.Models.Anime
         [XmlText]
         public decimal Value { get; set; }
     }
-
-
-
-
 }
