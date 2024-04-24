@@ -7,7 +7,7 @@
 	<NoWarn>$(NoWarn);CS8618</NoWarn>
 	<!--Package options-->
 	<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-	<Version>0.0.3</Version>
+	<Version>0.0.4</Version>
 	<Authors>Vagab0nd</Authors>
 	<Company>Vagab0nd</Company>
 	<Description>.Net library that provides wrapper for AniDB API.</Description>
