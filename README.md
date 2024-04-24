@@ -3,6 +3,13 @@
 
 [![Build](https://github.com/Vagab0nd/AniDB.Api/actions/workflows/build.yml/badge.svg?branch=main)](https://github.com/Vagab0nd/AniDB.Api/actions/workflows/build.yml)
 
+# 📥 Install
+
+Download and install library from NuGet Gallery:
+```
+dotnet add package AniDb.Api
+```
+
 # ☂️ Coverage
 
 Coverage as of right now is:
