@@ -1,4 +1,5 @@
 ﻿using AniDb.Api.Infrastracture;
+using AniDb.Api.Models.Anime;
 using AniDb.Api.Models.Hints;
 using AniDb.Api.Models.MyListSummary;
 using Flurl;
