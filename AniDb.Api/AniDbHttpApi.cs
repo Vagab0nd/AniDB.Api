@@ -1,6 +1,7 @@
 ﻿using AniDb.Api.Infrastracture;
 using AniDb.Api.Models.Anime;
 using AniDb.Api.Models.Hints;
+using AniDb.Api.Models.MainPage;
 using AniDb.Api.Models.MyListSummary;
 using Flurl;
 using Flurl.Http;
@@ -56,9 +57,13 @@ namespace AniDb.Api
         }
 
         /// <inheritdoc/>
-        public Task<string> GetRandomRecommendationAnime(CancellationToken cancellationToken = default)
+        public async Task<RandomRecommedations> GetRandomRecommendationAnime(CancellationToken cancellationToken = default)
         {
-            throw new NotImplementedException();
+            return await BaseUri
+                .AppendQueryParam("request", "randomrecommendation")
+                .AppendAniDbQueryParams()
+                .GetXmlAsync<RandomRecommedations>(cancellationToken)
+                .ConfigureAwait(false);
         }
 
         /// <inheritdoc/>

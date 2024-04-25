@@ -1,5 +1,6 @@
 ﻿using AniDb.Api.Models.Anime;
 using AniDb.Api.Models.Hints;
+using AniDb.Api.Models.MainPage;
 using AniDb.Api.Models.MyListSummary;
 
 namespace AniDb.Api
@@ -19,8 +20,8 @@ namespace AniDb.Api
         /// This command mirrors the type of data provided on the main web page. Use this instead of scraping the HTML. Please note, however, that the 'random recommendations' are, in fact, random. Please do not expect random results here to match random results there.
         /// </summary>
         /// <param name="cancellationToken"></param>
-        /// <returns>Single random recommended anime.</returns>
-        Task<string> GetRandomRecommendationAnime(CancellationToken cancellationToken = default);
+        /// <returns>Random recommended anime.</returns>
+        Task<RandomRecommedations> GetRandomRecommendationAnime(CancellationToken cancellationToken = default);
 
         /// <summary>
         /// This command mirrors the type of data provided on the main web page. Use this instead of scraping the HTML. Please note, however, that the 'random similar' are, in fact, random. Please do not expect random results here to match random results there.

@@ -33,5 +33,15 @@ namespace AniDb.Api.Test
             //assert
             response.Should().NotBeNull();
         }
+
+        [TestMethod]
+        public async Task GetRandomRecommendationAnime_should_return_recommandations()
+        {
+            //act
+            var response = await this.target.GetRandomRecommendationAnime();
+
+            //assert
+            response.Should().NotBeNull();
+        }
     }
 }

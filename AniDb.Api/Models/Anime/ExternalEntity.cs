@@ -4,7 +4,7 @@ namespace AniDb.Api.Models.Anime
 {
     public record ExternalEntity
     {
-        [XmlArrayItem(ElementName = "identifier")]
+        [XmlElement(ElementName = "identifier")]
         public string[] Identifiers { get; set; } = [];
 
         [XmlElement(ElementName = "url")]

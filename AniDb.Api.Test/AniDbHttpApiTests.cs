@@ -56,5 +56,19 @@ namespace AniDb.Api.Test
             response.Should().NotBeNull();
         }
 
+        [TestMethod]
+        public async Task GetRandomRecommendationAnime_should_deserialize_response_xml()
+        {
+            //arrange
+            using var httpTest = new HttpTest();
+            var xmlResponse = ResourcesHelper.GetStringResource("RandomRecommendationResponse.txt");
+            httpTest.RespondWith(xmlResponse);
+
+            //act
+            var response = await this.target.GetRandomRecommendationAnime();
+
+            //assert
+            response.Should().NotBeNull();
+        }
     }
 }

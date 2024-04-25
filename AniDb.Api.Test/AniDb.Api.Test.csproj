@@ -7,6 +7,9 @@
     <EmbeddedResource Include="Resources\*.txt" />
   </ItemGroup>
   <ItemGroup>
+    <None Remove="Resources\RandomRecommendationResponse.txt" />
+  </ItemGroup>
+  <ItemGroup>
     <EmbeddedResource Include="Resources\anime-titles.xml.gz" />
   </ItemGroup>
   <ItemGroup>
