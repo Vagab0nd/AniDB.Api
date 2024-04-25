@@ -5,10 +5,10 @@ namespace AniDb.Api.Models.MyListSummary
     public record MyListItem
     {
         [XmlAttribute(AttributeName = "aid")]
-        public int AnimeId { get; set; }
+        public string AnimeId { get; set; } = null!;
 
         [XmlAttribute(AttributeName = "state")]
-        public int State { get; set; }
+        public string State { get; set; } = null!;
 
         [XmlElement(ElementName = "episodecount")]
         public int EpisodeCount { get; set; }

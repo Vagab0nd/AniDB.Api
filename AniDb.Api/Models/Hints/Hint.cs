@@ -8,7 +8,7 @@ namespace AniDb.Api.Models.Hints
         public DateTime AddedDate { get; set; }
 
         [XmlElement("relid")]
-        public string AnimeId { get; set; }
+        public string AnimeId { get; set; } = null!;
 
         [XmlElement("calculated")]
         public decimal Calculated { get; set; }

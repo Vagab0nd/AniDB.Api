@@ -6,6 +6,6 @@ namespace AniDb.Api.Models.Titles
     public record AnimeTitlesCollection
     {
         [XmlElement(ElementName = "anime")]
-        public AnimeTitles[] AnimeTitles { get; set; }
+        public AnimeTitles[] AnimeTitles { get; set; } = [];
     }
 }
