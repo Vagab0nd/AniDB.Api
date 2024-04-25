@@ -5,10 +5,10 @@ namespace AniDb.Api.Models.Anime
     public record Tag
     {
         [XmlAttribute(AttributeName = "id")]
-        public int TagId { get; set; }
+        public string TagId { get; set; } = null!;
 
         [XmlAttribute(AttributeName = "parentid")]
-        public int ParentId { get; set; }
+        public string? ParentId { get; set; }
 
         [XmlAttribute(AttributeName = "weight")]
         public int Weight { get; set; }
@@ -26,12 +26,12 @@ namespace AniDb.Api.Models.Anime
         public DateTime Update { get; set; }
 
         [XmlElement(ElementName = "name")]
-        public string Name { get; set; }
+        public string Name { get; set; } = string.Empty;
 
         [XmlElement(ElementName = "description")]
-        public string Description { get; set; }
+        public string Description { get; set; } = string.Empty;
 
         [XmlElement(ElementName = "picurl")]
-        public string PictureUrl { get; set; }
+        public string PictureUrl { get; set; } = string.Empty;
     }
 }

@@ -8,6 +8,6 @@ namespace AniDb.Api.Models.Anime
         public int Type { get; set; }
 
         [XmlElement(ElementName = "externalentity")]
-        public ExternalEntity ExternalEntity { get; set; }
+        public ExternalEntity ExternalEntity { get; set; } = new ExternalEntity();
     }
 }

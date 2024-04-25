@@ -6,12 +6,12 @@ namespace AniDb.Api.Models.Hints
     public record HintCollection
     {
         [XmlAttribute("uid")]
-        public int UserId { get; set; }
+        public string UserId { get; set; } = null!;
 
         [XmlAttribute("type")]
-        public int Type { get; set; }
+        public string Type { get; set; } = null!;
 
         [XmlElement("hint")]
-        public Hint[] Hints { get; set; }
+        public Hint[] Hints { get; set; } = [];
     }
 }
