@@ -45,9 +45,13 @@ namespace AniDb.Api
         }
 
         /// <inheritdoc/>
-        public Task<string> GetHotAnime(CancellationToken cancellationToken = default)
+        public async Task<HotAnimeCollection> GetHotAnime(CancellationToken cancellationToken = default)
         {
-            throw new NotImplementedException();
+            return await BaseUri
+                .AppendQueryParam("request", "hotanime")
+                .AppendAniDbQueryParams()
+                .GetXmlAsync<HotAnimeCollection>(cancellationToken)
+                .ConfigureAwait(false);
         }
 
         /// <inheritdoc/>
@@ -57,12 +61,12 @@ namespace AniDb.Api
         }
 
         /// <inheritdoc/>
-        public async Task<RandomRecommedations> GetRandomRecommendationAnime(CancellationToken cancellationToken = default)
+        public async Task<RandomRecommendations> GetRandomRecommendationAnime(CancellationToken cancellationToken = default)
         {
             return await BaseUri
                 .AppendQueryParam("request", "randomrecommendation")
                 .AppendAniDbQueryParams()
-                .GetXmlAsync<RandomRecommedations>(cancellationToken)
+                .GetXmlAsync<RandomRecommendations>(cancellationToken)
                 .ConfigureAwait(false);
         }
 

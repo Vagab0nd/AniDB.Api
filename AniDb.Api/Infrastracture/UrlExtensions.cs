@@ -4,7 +4,6 @@ namespace AniDb.Api.Infrastracture
 {
     internal static class UrlExtensions
     {
-        //TODO: Apply for separate registration
         private const string ClientName = "anidbapidotnet";
         private const int ClientVersion = 1;
         private const int ProtocolVersion = 1;

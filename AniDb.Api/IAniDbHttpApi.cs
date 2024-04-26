@@ -21,7 +21,7 @@ namespace AniDb.Api
         /// </summary>
         /// <param name="cancellationToken"></param>
         /// <returns>Random recommended anime.</returns>
-        Task<RandomRecommedations> GetRandomRecommendationAnime(CancellationToken cancellationToken = default);
+        Task<RandomRecommendations> GetRandomRecommendationAnime(CancellationToken cancellationToken = default);
 
         /// <summary>
         /// This command mirrors the type of data provided on the main web page. Use this instead of scraping the HTML. Please note, however, that the 'random similar' are, in fact, random. Please do not expect random results here to match random results there.
@@ -35,7 +35,7 @@ namespace AniDb.Api
         /// </summary>
         /// <param name="cancellationToken"></param>
         /// <returns>List of trending (hot anime) in AniDB.</returns>
-        Task<string> GetHotAnime(CancellationToken cancellationToken = default);
+        Task<HotAnimeCollection> GetHotAnime(CancellationToken cancellationToken = default);
 
         /// <summary>
         /// A one-stop command returning the combined results of random recommendation, random similar, and hot anime. Use this command instead of scraping the HTML, and if you need more than one of the individual replies.

@@ -27,6 +27,21 @@ namespace AniDb.Api.Test
         }
 
         [TestMethod]
+        public async Task GetHotAnime_should_deserialize_response_xml()
+        {
+            //arrange
+            using var httpTest = new HttpTest();
+            var xmlResponse = ResourcesHelper.GetStringResource("HotAnimeResponse.txt");
+            httpTest.RespondWith(xmlResponse);
+
+            //act
+            var response = await this.target.GetHotAnime();
+
+            //assert
+            response.Should().NotBeNull();
+        }
+
+        [TestMethod]
         public async Task GetUserHints_should_deserialize_response_xml()
         {
             //arrange

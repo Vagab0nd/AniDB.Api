@@ -3,16 +3,13 @@ using System.Xml.Serialization;
 
 namespace AniDb.Api.Models.MainPage
 {
-    public record AnimeRecommendation
+    public record AnimeHot
     {
         [XmlAttribute(AttributeName = "id")]
         public string AnimeId { get; set; } = null!;
 
         [XmlAttribute(AttributeName = "restricted")]
-        public bool Restricted { get; set; }
-
-        [XmlElement(ElementName = "type")]
-        public string Type { get; set; } = null!;
+        public bool Restricted { get; set; }        
 
         [XmlElement(ElementName = "episodecount")]
         public int EpisodeCount { get; set; }
@@ -30,6 +27,6 @@ namespace AniDb.Api.Models.MainPage
         public string Picture { get; set; } = string.Empty;
 
         [XmlElement(ElementName = "ratings")]
-        public RecommendationRatings Ratings { get; set; } = new RecommendationRatings();
+        public Ratings Ratings { get; set; } = new Ratings();
     }
 }
