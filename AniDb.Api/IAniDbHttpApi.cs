@@ -1,4 +1,6 @@
-﻿using AniDb.Api.Models.Hints;
+﻿using AniDb.Api.Models.Anime;
+using AniDb.Api.Models.Hints;
+using AniDb.Api.Models.MainPage;
 using AniDb.Api.Models.MyListSummary;
 
 namespace AniDb.Api
@@ -18,29 +20,29 @@ namespace AniDb.Api
         /// This command mirrors the type of data provided on the main web page. Use this instead of scraping the HTML. Please note, however, that the 'random recommendations' are, in fact, random. Please do not expect random results here to match random results there.
         /// </summary>
         /// <param name="cancellationToken"></param>
-        /// <returns>Single random recommended anime.</returns>
-        Task<string> GetRandomRecommendationAnime(CancellationToken cancellationToken = default);
+        /// <returns>Random recommended anime.</returns>
+        Task<RandomRecommendations> GetRandomRecommendationAnime(CancellationToken cancellationToken = default);
 
         /// <summary>
         /// This command mirrors the type of data provided on the main web page. Use this instead of scraping the HTML. Please note, however, that the 'random similar' are, in fact, random. Please do not expect random results here to match random results there.
         /// </summary>
         /// <param name="cancellationToken"></param>
         /// <returns>Pairs of random anime that are somehow similar.</returns>
-        Task<string> GetRandomSimilarAnime(CancellationToken cancellationToken = default);
+        Task<RandomSimilar> GetRandomSimilarAnime(CancellationToken cancellationToken = default);
 
         /// <summary>
         /// This command mirrors the type of data provided on the main web page. Use this instead of scraping the HTML. Unlike the two random result commands, the results here will match the results as supplied by the main web page (with some possible variance of a few hours, depending on cache life.)
         /// </summary>
         /// <param name="cancellationToken"></param>
         /// <returns>List of trending (hot anime) in AniDB.</returns>
-        Task<string> GetHotAnime(CancellationToken cancellationToken = default);
+        Task<HotAnimeCollection> GetHotAnime(CancellationToken cancellationToken = default);
 
         /// <summary>
         /// A one-stop command returning the combined results of random recommendation, random similar, and hot anime. Use this command instead of scraping the HTML, and if you need more than one of the individual replies.
         /// </summary>
         /// <param name="cancellationToken"></param>
         /// <returns>Combined results of random recommendation, random similar and hot anime queries.</returns>
-        Task<string> GetMainPageData(CancellationToken cancellationToken = default);
+        Task<MainPage> GetMainPageData(CancellationToken cancellationToken = default);
 
         /// <summary>
         /// Returns a list of the user's anime list in summary form, roughly matching the data in the "my list" page of the web interface.

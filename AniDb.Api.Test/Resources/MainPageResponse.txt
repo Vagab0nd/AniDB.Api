@@ -1,0 +1,349 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<main>
+<hotanime>
+<anime id="18104" restricted="false">
+<episodecount>12</episodecount>
+<startdate>2024-04-08</startdate>
+<enddate>2024-06</enddate>
+<title xml:lang="x-jat" type="main">Mushoku Tensei II: Isekai Ittara Honki Dasu (2024)</title>
+<ratings>
+<permanent count="53">7.65</permanent>
+<temporary count="54">7.45</temporary>
+</ratings>
+<picture>301311.jpg</picture>
+</anime>
+<anime id="17709" restricted="false">
+<episodecount>24</episodecount>
+<startdate>2024-04-05</startdate>
+<title xml:lang="x-jat" type="main">Tensei Shitara Slime Datta Ken (2024)</title>
+<ratings>
+<permanent count="44">6.37</permanent>
+<temporary count="44">7.11</temporary>
+</ratings>
+<picture>297217.jpg</picture>
+</anime>
+<anime id="17221" restricted="false">
+<episodecount>25</episodecount>
+<startdate>2024-04-02</startdate>
+<title xml:lang="x-jat" type="main">Ookami to Koushinryou: Merchant Meets the Wise Wolf</title>
+<ratings>
+<permanent count="75">8.22</permanent>
+<temporary count="76">7.73</temporary>
+</ratings>
+<picture>302190.jpg</picture>
+</anime>
+<anime id="17431" restricted="false">
+<episodecount>11</episodecount>
+<startdate>2024-04-10</startdate>
+<title xml:lang="x-jat" type="main">Kono Subarashii Sekai ni Shukufuku o! 3</title>
+<ratings>
+<permanent count="45">7.55</permanent>
+<temporary count="46">7.52</temporary>
+</ratings>
+<picture>301312.jpg</picture>
+</anime>
+<anime id="17686" restricted="false">
+<episodecount>12</episodecount>
+<startdate>2024-04-05</startdate>
+<title xml:lang="x-jat" type="main">Maou no Ore ga Dorei Elf o Yome ni Shitanda ga, Dou Medereba Ii?</title>
+<ratings>
+<permanent count="48">5.60</permanent>
+<temporary count="48">6.52</temporary>
+</ratings>
+<picture>299284.jpg</picture>
+</anime>
+<anime id="18201" restricted="false">
+<episodecount>12</episodecount>
+<startdate>2024-04-02</startdate>
+<title xml:lang="x-jat" type="main">Re:Monster</title>
+<ratings>
+<permanent count="55">3.96</permanent>
+<temporary count="57">5.57</temporary>
+</ratings>
+<picture>300468.jpg</picture>
+</anime>
+<anime id="17098" restricted="false">
+<episodecount>13</episodecount>
+<startdate>2024-04-05</startdate>
+<title xml:lang="x-jat" type="main">Mahouka Koukou no Rettousei (2024)</title>
+<ratings>
+<permanent count="29">5.93</permanent>
+<temporary count="29">6.43</temporary>
+</ratings>
+<picture>301660.jpg</picture>
+</anime>
+<anime id="17702" restricted="false">
+<startdate>2024-04-02</startdate>
+<title xml:lang="x-jat" type="main">Tensei Shitara Dai Nana Ouji Datta no de, Kimamani Majutsu o Kiwamemasu</title>
+<ratings>
+<permanent count="53">4.76</permanent>
+<temporary count="54">6.03</temporary>
+</ratings>
+<picture>299446.jpg</picture>
+</anime>
+<anime id="18247" restricted="false">
+<episodecount>12</episodecount>
+<startdate>2024-04-08</startdate>
+<title xml:lang="x-jat" type="main">Lv2 kara Cheat datta Moto Yuusha Kouho no Mattari Isekai Life</title>
+<ratings>
+<permanent count="43">4.84</permanent>
+<temporary count="43">6.27</temporary>
+</ratings>
+<picture>300530.jpg</picture>
+</anime>
+<anime id="17550" restricted="false">
+<episodecount>12</episodecount>
+<startdate>2024-04-13</startdate>
+<title xml:lang="x-jat" type="main">Kaijuu 8 Gou</title>
+<ratings>
+<permanent count="49">7.41</permanent>
+<temporary count="50">7.49</temporary>
+</ratings>
+<picture>297170.jpg</picture>
+</anime>
+</hotanime>
+<randomsimilar>
+<similar>
+<source aid="1076" restricted="false">
+<title xml:lang="x-jat" type="main">Golgo 13</title>
+<picture>90384.jpg</picture>
+</source>
+<target aid="4637" restricted="false">
+<title xml:lang="x-jat" type="main">009-1</title>
+<picture>288734.jpg</picture>
+</target>
+</similar>
+<similar>
+<source aid="11712" restricted="false">
+<title xml:lang="x-jat" type="main">Hai to Gensou no Grimgar</title>
+<picture>225144.jpg</picture>
+</source>
+<target aid="10894" restricted="false">
+<title xml:lang="x-jat" type="main">Dungeon ni Deai o Motomeru no wa Machigatte Iru Darouka: Familia Myth</title>
+<picture>221945.jpg</picture>
+</target>
+</similar>
+<similar>
+<source aid="8660" restricted="false">
+<title xml:lang="x-jat" type="main">High School DxD</title>
+<picture>275215.jpg</picture>
+</source>
+<target aid="6968" restricted="false">
+<title xml:lang="x-jat" type="main">Ichiban Ushiro no Daimaou</title>
+<picture>287012.jpg</picture>
+</target>
+</similar>
+<similar>
+<source aid="8899" restricted="false">
+<title xml:lang="x-jat" type="main">Joshiraku</title>
+<picture>254704.jpg</picture>
+</source>
+<target aid="4777" restricted="false">
+<title xml:lang="x-jat" type="main">Lucky Star</title>
+<picture>231732.jpg</picture>
+</target>
+</similar>
+<similar>
+<source aid="13261" restricted="false">
+<title xml:lang="x-jat" type="main">Promare</title>
+<picture>231449.jpg</picture>
+</source>
+<target aid="6529" restricted="false">
+<title xml:lang="x-jat" type="main">Redline</title>
+<picture>228312.jpg</picture>
+</target>
+</similar>
+<similar>
+<source aid="5543" restricted="true">
+<title xml:lang="x-jat" type="main">Resort Boin</title>
+<picture>280576.jpg</picture>
+</source>
+<target aid="7136" restricted="true">
+<title xml:lang="x-jat" type="main">Kanojo x Kanojo x Kanojo: San Shimai to no Dokidoki Kyoudou Seikatsu</title>
+<picture>280575.jpg</picture>
+</target>
+</similar>
+<similar>
+<source aid="19" restricted="false">
+<title xml:lang="x-jat" type="main">Rizelmine</title>
+<picture>221227.jpg</picture>
+</source>
+<target aid="2372" restricted="false">
+<title xml:lang="x-jat" type="main">Final Approach</title>
+<picture>3566.jpg</picture>
+</target>
+</similar>
+<similar>
+<source aid="13846" restricted="false">
+<title xml:lang="x-jat" type="main">Shikioriori</title>
+<picture>221133.jpg</picture>
+</source>
+<target aid="9655" restricted="false">
+<title xml:lang="x-jat" type="main">Dareka no Manazashi</title>
+<picture>143962.jpg</picture>
+</target>
+</similar>
+<similar>
+<source aid="6049" restricted="false">
+<title xml:lang="x-jat" type="main">Tentai Senshi Sunred</title>
+<picture>23790.jpg</picture>
+</source>
+<target aid="8831" restricted="false">
+<title xml:lang="x-jat" type="main">Thermae Romae</title>
+<picture>78573.jpg</picture>
+</target>
+</similar>
+<similar>
+<source aid="13153" restricted="false">
+<title xml:lang="x-jat" type="main">Youkoso Jitsuryoku Shijou Shugi no Kyoushitsu e</title>
+<picture>257735.jpg</picture>
+</source>
+<target aid="6747" restricted="false">
+<title xml:lang="x-jat" type="main">Baka to Test to Shoukanjuu</title>
+<picture>221095.jpg</picture>
+</target>
+</similar>
+</randomsimilar>
+<randomrecommendation>
+<recommendation>
+<anime id="4580" restricted="true">
+<type>OVA</type>
+<episodecount>1</episodecount>
+<startdate>2006-08-25</startdate>
+<enddate>2006-08-25</enddate>
+<title xml:lang="x-jat" type="main">Anime Kazama Mana</title>
+<picture>297189.jpg</picture>
+<ratings>
+<permanent count="460">430</permanent>
+<recommendations>2</recommendations>
+</ratings>
+</anime>
+</recommendation>
+<recommendation>
+<anime id="8979" restricted="true">
+<type>OVA</type>
+<episodecount>2</episodecount>
+<startdate>2012-04-27</startdate>
+<enddate>2013-03-29</enddate>
+<title xml:lang="x-jat" type="main">Dark Blue</title>
+<picture>82533.jpg</picture>
+<ratings>
+<permanent count="291">363</permanent>
+<recommendations>1</recommendations>
+</ratings>
+</anime>
+</recommendation>
+<recommendation>
+<anime id="11068" restricted="false">
+<type>TV Series</type>
+<episodecount>12</episodecount>
+<startdate>2015-09-24</startdate>
+<enddate>2015-12-10</enddate>
+<title xml:lang="x-jat" type="main">Diabolik Lovers More, Blood</title>
+<picture>221943.jpg</picture>
+<ratings>
+<permanent count="327">177</permanent>
+<recommendations>2</recommendations>
+</ratings>
+</anime>
+</recommendation>
+<recommendation>
+<anime id="13721" restricted="false">
+<type>TV Series</type>
+<episodecount>12</episodecount>
+<startdate>2017-01-07</startdate>
+<enddate>2017-03-25</enddate>
+<title xml:lang="x-jat" type="main">Dou Po Cangqiong</title>
+<picture>211671.jpg</picture>
+<ratings>
+<permanent count="95">541</permanent>
+<recommendations>2</recommendations>
+</ratings>
+</anime>
+</recommendation>
+<recommendation>
+<anime id="10009" restricted="false">
+<type>OVA</type>
+<episodecount>1</episodecount>
+<startdate>2014-07-05</startdate>
+<enddate>2014-07-05</enddate>
+<title xml:lang="x-jat" type="main">Girls und Panzer: Kore ga Hontou no Anzio-sen Desu!</title>
+<picture>265108.jpg</picture>
+<ratings>
+<permanent count="969">683</permanent>
+<recommendations>5</recommendations>
+</ratings>
+</anime>
+</recommendation>
+<recommendation>
+<anime id="890" restricted="false">
+<type>Movie</type>
+<episodecount>1</episodecount>
+<startdate>2004-03-06</startdate>
+<enddate>2004-03-06</enddate>
+<title xml:lang="x-jat" type="main">Innocence</title>
+<picture>288858.jpg</picture>
+<ratings>
+<permanent count="8015">708</permanent>
+<recommendations>30</recommendations>
+</ratings>
+</anime>
+</recommendation>
+<recommendation>
+<anime id="7670" restricted="false">
+<type>Other</type>
+<episodecount>3</episodecount>
+<startdate>2010-08-10</startdate>
+<enddate>2010-12-19</enddate>
+<title xml:lang="x-jat" type="main">Mokei Senshi Gunpla Builders Beginning G</title>
+<picture>51315.jpg</picture>
+<ratings>
+<permanent count="233">477</permanent>
+<recommendations>2</recommendations>
+</ratings>
+</anime>
+</recommendation>
+<recommendation>
+<anime id="14736" restricted="false">
+<type>OVA</type>
+<episodecount>1</episodecount>
+<startdate>2019-09-10</startdate>
+<enddate>2019-09-10</enddate>
+<title xml:lang="x-jat" type="main">Totsukuni no Shoujo</title>
+<picture>231096.jpg</picture>
+<ratings>
+<permanent count="382">713</permanent>
+<recommendations>3</recommendations>
+</ratings>
+</anime>
+</recommendation>
+<recommendation>
+<anime id="53" restricted="false">
+<type>TV Series</type>
+<episodecount>26</episodecount>
+<startdate>1998-04-02</startdate>
+<enddate>1998-10-01</enddate>
+<title xml:lang="x-jat" type="main">Trigun</title>
+<picture>279803.jpg</picture>
+<ratings>
+<permanent count="12019">770</permanent>
+<recommendations>77</recommendations>
+</ratings>
+</anime>
+</recommendation>
+<recommendation>
+<anime id="3427" restricted="false">
+<type>TV Series</type>
+<episodecount>26</episodecount>
+<startdate>2006-04-04</startdate>
+<enddate>2006-09-26</enddate>
+<title xml:lang="x-jat" type="main">Utawarerumono</title>
+<picture>224603.jpg</picture>
+<ratings>
+<permanent count="6602">723</permanent>
+<recommendations>41</recommendations>
+</ratings>
+</anime>
+</recommendation>
+</randomrecommendation>
+</main>

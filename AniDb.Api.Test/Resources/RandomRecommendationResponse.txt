@@ -1,0 +1,30 @@
+﻿<randomrecommendation>
+    <recommendation>
+        <anime id="7899" restricted="false">
+            <type>TV Series</type>
+            <episodecount>13</episodecount>
+            <startdate>2010-10-04</startdate>
+            <enddate>2010-12-27</enddate>
+            <title xml:lang="x-jat" type="main">Arakawa Under the Bridge 2</title>
+            <picture>54734.jpg</picture>
+            <ratings>
+                <permanent count="781">623</permanent>
+                <recommendations>8</recommendations>
+            </ratings>
+        </anime>
+    </recommendation>
+    <recommendation>
+        <anime id="3432" restricted="false">
+            <type>TV Series</type>
+            <episodecount>12</episodecount>
+            <startdate>2011-10-04</startdate>
+            <enddate>2012-12-27</enddate>
+            <title xml:lang="x-jat" type="main">Another anime</title>
+            <picture>12345.jpg</picture>
+            <ratings>
+                <permanent count="322">432</permanent>
+                <recommendations>7</recommendations>
+            </ratings>
+        </anime>
+    </recommendation>
+</randomrecommendation>

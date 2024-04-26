@@ -27,6 +27,36 @@ namespace AniDb.Api.Test
         }
 
         [TestMethod]
+        public async Task GetHotAnime_should_deserialize_response_xml()
+        {
+            //arrange
+            using var httpTest = new HttpTest();
+            var xmlResponse = ResourcesHelper.GetStringResource("HotAnimeResponse.txt");
+            httpTest.RespondWith(xmlResponse);
+
+            //act
+            var response = await this.target.GetHotAnime();
+
+            //assert
+            response.Should().NotBeNull();
+        }
+
+        [TestMethod]
+        public async Task GetMainPageData_should_deserialize_response_xml()
+        {
+            //arrange
+            using var httpTest = new HttpTest();
+            var xmlResponse = ResourcesHelper.GetStringResource("MainPageResponse.txt");
+            httpTest.RespondWith(xmlResponse);
+
+            //act
+            var response = await this.target.GetMainPageData();
+
+            //assert
+            response.Should().NotBeNull();
+        }
+
+        [TestMethod]
         public async Task GetUserHints_should_deserialize_response_xml()
         {
             //arrange
@@ -56,5 +86,34 @@ namespace AniDb.Api.Test
             response.Should().NotBeNull();
         }
 
+        [TestMethod]
+        public async Task GetRandomRecommendationAnime_should_deserialize_response_xml()
+        {
+            //arrange
+            using var httpTest = new HttpTest();
+            var xmlResponse = ResourcesHelper.GetStringResource("RandomRecommendationResponse.txt");
+            httpTest.RespondWith(xmlResponse);
+
+            //act
+            var response = await this.target.GetRandomRecommendationAnime();
+
+            //assert
+            response.Should().NotBeNull();
+        }
+
+        [TestMethod]
+        public async Task GetRandomSimilarAnime_should_deserialize_response_xml()
+        {
+            //arrange
+            using var httpTest = new HttpTest();
+            var xmlResponse = ResourcesHelper.GetStringResource("RandomSimilarResponse.txt");
+            httpTest.RespondWith(xmlResponse);
+
+            //act
+            var response = await this.target.GetRandomSimilarAnime();
+
+            //assert
+            response.Should().NotBeNull();
+        }
     }
 }

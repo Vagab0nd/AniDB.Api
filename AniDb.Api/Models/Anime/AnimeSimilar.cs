@@ -16,5 +16,4 @@ namespace AniDb.Api.Models.Anime
         [XmlText]
         public string Text { get; set; } = string.Empty;
     }
-
 }

@@ -1,5 +1,7 @@
 ﻿using AniDb.Api.Infrastracture;
+using AniDb.Api.Models.Anime;
 using AniDb.Api.Models.Hints;
+using AniDb.Api.Models.MainPage;
 using AniDb.Api.Models.MyListSummary;
 using Flurl;
 using Flurl.Http;
@@ -15,7 +17,7 @@ namespace AniDb.Api
 
         public AniDbHttpApi()
         {
-            FlurlHttpExtensions.TryConfigureClientForUrl("http://api.anidb.net:9001", builder => {
+            FlurlHttpExtensions.TryConfigureClientForUrl(BaseUri, builder => {
                 static RateLimitingHandler rateLimittingHandlerFactory() => new(TimeSpan.FromSeconds(2), 1); // 1req/2s
                 builder
                     .AddMiddleware(rateLimittingHandlerFactory)
@@ -43,27 +45,43 @@ namespace AniDb.Api
         }
 
         /// <inheritdoc/>
-        public Task<string> GetHotAnime(CancellationToken cancellationToken = default)
+        public async Task<HotAnimeCollection> GetHotAnime(CancellationToken cancellationToken = default)
         {
-            throw new NotImplementedException();
+            return await BaseUri
+                .AppendQueryParam("request", "hotanime")
+                .AppendAniDbQueryParams()
+                .GetXmlAsync<HotAnimeCollection>(cancellationToken)
+                .ConfigureAwait(false);
         }
 
         /// <inheritdoc/>
-        public Task<string> GetMainPageData(CancellationToken cancellationToken = default)
+        public async Task<MainPage> GetMainPageData(CancellationToken cancellationToken = default)
         {
-            throw new NotImplementedException();
+            return await BaseUri
+                .AppendQueryParam("request", "main")
+                .AppendAniDbQueryParams()
+                .GetXmlAsync<MainPage>(cancellationToken)
+                .ConfigureAwait(false);
         }
 
         /// <inheritdoc/>
-        public Task<string> GetRandomRecommendationAnime(CancellationToken cancellationToken = default)
+        public async Task<RandomRecommendations> GetRandomRecommendationAnime(CancellationToken cancellationToken = default)
         {
-            throw new NotImplementedException();
+            return await BaseUri
+                .AppendQueryParam("request", "randomrecommendation")
+                .AppendAniDbQueryParams()
+                .GetXmlAsync<RandomRecommendations>(cancellationToken)
+                .ConfigureAwait(false);
         }
 
         /// <inheritdoc/>
-        public Task<string> GetRandomSimilarAnime(CancellationToken cancellationToken = default)
+        public async Task<RandomSimilar> GetRandomSimilarAnime(CancellationToken cancellationToken = default)
         {
-            throw new NotImplementedException();
+            return await BaseUri
+                .AppendQueryParam("request", "randomsimilar")
+                .AppendAniDbQueryParams()
+                .GetXmlAsync<RandomSimilar>(cancellationToken)
+                .ConfigureAwait(false);
         }
 
         /// <inheritdoc/>

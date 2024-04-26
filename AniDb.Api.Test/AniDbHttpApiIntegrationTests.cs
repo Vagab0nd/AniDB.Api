@@ -22,6 +22,26 @@ namespace AniDb.Api.Test
         }
 
         [TestMethod]
+        public async Task GetHotAnime_should_return_hot_anime()
+        {
+            //act
+            var response = await this.target.GetHotAnime();
+
+            //assert
+            response.Should().NotBeNull();
+        }
+
+        [TestMethod]
+        public async Task GetMainPageData_should_return_main_page_data()
+        {
+            //act
+            var response = await this.target.GetMainPageData();
+
+            //assert
+            response.Should().NotBeNull();
+        }
+
+        [TestMethod]
         public async Task GetUserHints_should_return_hints()
         {
             //act
@@ -29,6 +49,26 @@ namespace AniDb.Api.Test
                 this.TestContext.Properties["Username"]?.ToString(), 
                 this.TestContext.Properties["Password"]?.ToString()
                 );
+
+            //assert
+            response.Should().NotBeNull();
+        }
+
+        [TestMethod]
+        public async Task GetRandomRecommendationAnime_should_return_recommandations()
+        {
+            //act
+            var response = await this.target.GetRandomRecommendationAnime();
+
+            //assert
+            response.Should().NotBeNull();
+        }
+
+        [TestMethod]
+        public async Task GetRandomSimilarAnime_should_return_recommandations()
+        {
+            //act
+            var response = await this.target.GetRandomSimilarAnime();
 
             //assert
             response.Should().NotBeNull();
