@@ -6,6 +6,6 @@ namespace AniDb.Api.Models.MainPage
     public record RandomRecommedations
     {
         [XmlElement(ElementName = "recommendation")]
-        public AnimeRecommendation[] Recommendation { get; set; } = [];
+        public Recommendation[] Recommendation { get; set; } = [];
     }
 }

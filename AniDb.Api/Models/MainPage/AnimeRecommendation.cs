@@ -15,10 +15,10 @@ namespace AniDb.Api.Models.MainPage
         public int EpisodeCount { get; set; }
 
         [XmlElement(ElementName = "startdate")]
-        public DateOnly StartDate { get; set; }
+        public DateTime StartDate { get; set; }
 
         [XmlElement(ElementName = "enddate")]
-        public DateOnly EndDate { get; set; }
+        public DateTime EndDate { get; set; }
 
         [XmlElement(ElementName = "title")]
         public Title Title { get; set; } = new Title();
