@@ -23,7 +23,14 @@ namespace AniDb.Api.Models.Anime
         public bool Verified { get; set; }
 
         [XmlAttribute(AttributeName = "update")]
-        public DateTime Update { get; set; }
+        public string? Updated
+        {
+            get { return this.UpdatedDate.ToString(); }
+            set { this.UpdatedDate = value != null ? DateOnly.Parse(value) : null; }
+        }
+
+        [XmlIgnore]
+        public DateOnly? UpdatedDate { get; set; }
 
         [XmlElement(ElementName = "name")]
         public string Name { get; set; } = string.Empty;
