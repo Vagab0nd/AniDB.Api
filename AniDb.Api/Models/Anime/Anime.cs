@@ -22,7 +22,7 @@ namespace AniDb.Api.Models.Anime
         public DateTime StartDate { get; set; }
 
         [XmlElement(ElementName = "enddate")]
-        public DateTime EndDate { get; set; }
+        public DateTime? EndDate { get; set; }
 
         [XmlArray(ElementName = "titles")]
         [XmlArrayItem(ElementName = "title")]
