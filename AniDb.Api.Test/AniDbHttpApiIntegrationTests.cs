@@ -32,6 +32,16 @@ namespace AniDb.Api.Test
         }
 
         [TestMethod]
+        public async Task GetMainPageData_should_return_main_page_data()
+        {
+            //act
+            var response = await this.target.GetMainPageData();
+
+            //assert
+            response.Should().NotBeNull();
+        }
+
+        [TestMethod]
         public async Task GetUserHints_should_return_hints()
         {
             //act

@@ -8,6 +8,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Remove="Resources\HotAnimeResponse.txt" />
+    <None Remove="Resources\MainPageResponse.txt" />
     <None Remove="Resources\RandomRecommendationResponse.txt" />
     <None Remove="Resources\RandomSimilarResponse.txt" />
   </ItemGroup>

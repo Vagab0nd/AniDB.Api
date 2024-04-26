@@ -42,6 +42,21 @@ namespace AniDb.Api.Test
         }
 
         [TestMethod]
+        public async Task GetMainPageData_should_deserialize_response_xml()
+        {
+            //arrange
+            using var httpTest = new HttpTest();
+            var xmlResponse = ResourcesHelper.GetStringResource("MainPageResponse.txt");
+            httpTest.RespondWith(xmlResponse);
+
+            //act
+            var response = await this.target.GetMainPageData();
+
+            //assert
+            response.Should().NotBeNull();
+        }
+
+        [TestMethod]
         public async Task GetUserHints_should_deserialize_response_xml()
         {
             //arrange

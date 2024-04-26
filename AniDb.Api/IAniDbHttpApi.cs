@@ -42,7 +42,7 @@ namespace AniDb.Api
         /// </summary>
         /// <param name="cancellationToken"></param>
         /// <returns>Combined results of random recommendation, random similar and hot anime queries.</returns>
-        Task<string> GetMainPageData(CancellationToken cancellationToken = default);
+        Task<MainPage> GetMainPageData(CancellationToken cancellationToken = default);
 
         /// <summary>
         /// Returns a list of the user's anime list in summary form, roughly matching the data in the "my list" page of the web interface.

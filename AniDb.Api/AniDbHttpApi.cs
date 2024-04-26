@@ -55,9 +55,13 @@ namespace AniDb.Api
         }
 
         /// <inheritdoc/>
-        public Task<string> GetMainPageData(CancellationToken cancellationToken = default)
+        public async Task<MainPage> GetMainPageData(CancellationToken cancellationToken = default)
         {
-            throw new NotImplementedException();
+            return await BaseUri
+                .AppendQueryParam("request", "main")
+                .AppendAniDbQueryParams()
+                .GetXmlAsync<MainPage>(cancellationToken)
+                .ConfigureAwait(false);
         }
 
         /// <inheritdoc/>

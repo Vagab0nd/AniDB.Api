@@ -21,7 +21,7 @@ namespace AniDb.Api.Models.MainPage
         public DateTime StartDate { get; set; }
 
         [XmlElement(ElementName = "enddate")]
-        public DateTime EndDate { get; set; }
+        public DateTime? EndDate { get; set; }
 
         [XmlElement(ElementName = "title")]
         public Title Title { get; set; } = new Title();
