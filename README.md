@@ -16,6 +16,10 @@ Coverage as of right now is:
  - [HTTP API](https://wiki.anidb.net/HTTP_API_Definition)
  - [Titles dump](https://wiki.anidb.net/API#Anime_Titles)
 
+# 📝 TODO
+
+- Consider using DateOnly in models when migrating to .Net7 or higher.
+
 # ⚖ License
 
 This project is licensed under the GNU General Public License v3.0 (GPL-3.0) - see the [LICENSE](LICENSE) file for more details.
