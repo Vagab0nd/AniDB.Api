@@ -22,6 +22,16 @@ namespace AniDb.Api.Test
         }
 
         [TestMethod]
+        public async Task GetHotAnime_should_return_hot_anime()
+        {
+            //act
+            var response = await this.target.GetHotAnime();
+
+            //assert
+            response.Should().NotBeNull();
+        }
+
+        [TestMethod]
         public async Task GetUserHints_should_return_hints()
         {
             //act
