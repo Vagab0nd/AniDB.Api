@@ -53,5 +53,15 @@ namespace AniDb.Api.Test
             //assert
             response.Should().NotBeNull();
         }
+
+        [TestMethod]
+        public async Task GetRandomSimilarAnime_should_return_recommandations()
+        {
+            //act
+            var response = await this.target.GetRandomSimilarAnime();
+
+            //assert
+            response.Should().NotBeNull();
+        }
     }
 }
