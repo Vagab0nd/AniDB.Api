@@ -6,7 +6,7 @@
     <LangVersion>latest</LangVersion>
 	<!--Package options-->
 	<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-	<Version>0.1.0</Version>
+	<Version>0.1.1</Version>
 	<Authors>Vagab0nd</Authors>
 	<Company>Vagab0nd</Company>
 	<Description>.Net library that provides wrapper for AniDB API.</Description>
@@ -17,7 +17,7 @@
 	<RepositoryType>Git</RepositoryType>
 	<PackageTags>anidb api anime</PackageTags>
 	<PackageReadmeFile>README.md</PackageReadmeFile>
-	<PackageReleaseNotes>Implement main page API methods.</PackageReleaseNotes>
+	<PackageReleaseNotes>Improved models used by API.</PackageReleaseNotes>
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="Flurl.Http" Version="4.0.2" />
