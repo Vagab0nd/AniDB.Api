@@ -71,9 +71,13 @@ namespace AniDb.Api
         }
 
         /// <inheritdoc/>
-        public Task<string> GetRandomSimilarAnime(CancellationToken cancellationToken = default)
+        public async Task<RandomSimilar> GetRandomSimilarAnime(CancellationToken cancellationToken = default)
         {
-            throw new NotImplementedException();
+            return await BaseUri
+                .AppendQueryParam("request", "randomsimilar")
+                .AppendAniDbQueryParams()
+                .GetXmlAsync<RandomSimilar>(cancellationToken)
+                .ConfigureAwait(false);
         }
 
         /// <inheritdoc/>

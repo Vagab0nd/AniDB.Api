@@ -28,7 +28,7 @@ namespace AniDb.Api
         /// </summary>
         /// <param name="cancellationToken"></param>
         /// <returns>Pairs of random anime that are somehow similar.</returns>
-        Task<string> GetRandomSimilarAnime(CancellationToken cancellationToken = default);
+        Task<RandomSimilar> GetRandomSimilarAnime(CancellationToken cancellationToken = default);
 
         /// <summary>
         /// This command mirrors the type of data provided on the main web page. Use this instead of scraping the HTML. Unlike the two random result commands, the results here will match the results as supplied by the main web page (with some possible variance of a few hours, depending on cache life.)
