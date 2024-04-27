@@ -9,7 +9,12 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{B23F3449-C1B
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{D65F50F0-481F-4475-8E1A-036D7B985F66}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AniDb.Api.Test", "AniDb.Api.Test\AniDb.Api.Test.csproj", "{B9659A98-D8BF-4E39-BF9A-514C7D0BCFD4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AniDb.Api.Test", "AniDb.Api.Test\AniDb.Api.Test.csproj", "{B9659A98-D8BF-4E39-BF9A-514C7D0BCFD4}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "repo", "repo", "{AF485882-9C3B-41E1-A178-EAE73CAE9F20}"
+	ProjectSection(SolutionItems) = preProject
+		README.md = README.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

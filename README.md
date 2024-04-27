@@ -18,7 +18,8 @@ Coverage as of right now is:
 
 # 📝 TODO
 
-- Consider using DateOnly in models when migrating to .Net7 or higher.
+- Use `DateOnly` in models when migrating to .Net7 or higher - support for `DateOnly` conversion to/from XML.
+- Use `required` keyword instead of null collapse in DTOs when migrating to .Net7 or higher.
 
 # ⚖ License
 
