@@ -2,6 +2,8 @@
 .Net library that provides wrapper for AniDB API. You need an AniDB account to fully utilize API.
 
 [![Build](https://github.com/Vagab0nd/AniDB.Api/actions/workflows/build.yml/badge.svg?branch=main)](https://github.com/Vagab0nd/AniDB.Api/actions/workflows/build.yml)
+![NuGet Version](https://img.shields.io/nuget/v/AniDb.Api)
+![GitHub License](https://img.shields.io/github/license/Vagab0nd/AniDB.Api?color=blue)
 
 # 📥 Install
 
