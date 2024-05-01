@@ -5,12 +5,12 @@ namespace AniDb.Api.Models.Anime
     public record Seiyuu
     {
         [XmlAttribute(AttributeName = "id")]
-        public int CreatorId { get; set; }
+        public int CreatorId { get; init; }
 
         [XmlAttribute(AttributeName = "picture")]
-        public string Picture { get; set; } = string.Empty;
+        public string Picture { get; init; } = string.Empty;
 
         [XmlText]
-        public string Text { get; set; } = string.Empty;
+        public string Text { get; init; } = string.Empty;
     }
 }
