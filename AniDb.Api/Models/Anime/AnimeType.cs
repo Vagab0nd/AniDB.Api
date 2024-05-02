@@ -14,6 +14,8 @@ namespace AniDb.Api.Models.Anime
         [XmlEnum(Name = "TV Special")]
         TvSpecial,
         [XmlEnum(Name = "Music Video")]
-        MusicVideo
+        MusicVideo,
+        [XmlEnum(Name = "unknown")]
+        Unknown
     }
 }
