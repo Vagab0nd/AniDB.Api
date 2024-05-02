@@ -4,6 +4,6 @@
     {
         public T? Data { get; init; }
 
-        public int Problem { get; set; }
+        public string? ErrorMessage { get; init; }
     }
 }
