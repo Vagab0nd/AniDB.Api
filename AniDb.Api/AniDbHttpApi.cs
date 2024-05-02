@@ -28,10 +28,6 @@ namespace AniDb.Api
             });
         }
 
-        public void Dispose()
-        {
-        }
-
         /// <inheritdoc/>
         public async Task<Response<Anime>> GetAnime(int animeId, CancellationToken cancellationToken = default)
         {

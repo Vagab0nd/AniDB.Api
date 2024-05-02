@@ -5,7 +5,7 @@ using AniDb.Api.Models.MyListSummary;
 
 namespace AniDb.Api
 {
-    public interface IAniDbHttpApi: IDisposable
+    public interface IAniDbHttpApi
     {
 
         /// <summary>
