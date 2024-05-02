@@ -5,7 +5,6 @@ using AniDb.Api.Models.MainPage;
 using AniDb.Api.Models.MyListSummary;
 using Flurl;
 using Flurl.Http;
-using Flurl.Http.Xml;
 
 namespace AniDb.Api
 {
@@ -34,58 +33,58 @@ namespace AniDb.Api
         }
 
         /// <inheritdoc/>
-        public async Task<Anime> GetAnime(int animeId, CancellationToken cancellationToken = default)
+        public async Task<Response<Anime>> GetAnime(int animeId, CancellationToken cancellationToken = default)
         {
             return await BaseUri
                 .AppendQueryParam("request", "anime")
                 .AppendQueryParam("aid", animeId)    
                 .AppendAniDbQueryParams()
-                .GetXmlAsync<Anime>(cancellationToken)
+                .GetAniDbResponse<Anime>(cancellationToken)
                 .ConfigureAwait(false);
         }
 
         /// <inheritdoc/>
-        public async Task<HotAnimeCollection> GetHotAnime(CancellationToken cancellationToken = default)
+        public async Task<Response<HotAnimeCollection>> GetHotAnime(CancellationToken cancellationToken = default)
         {
             return await BaseUri
                 .AppendQueryParam("request", "hotanime")
                 .AppendAniDbQueryParams()
-                .GetXmlAsync<HotAnimeCollection>(cancellationToken)
+                .GetAniDbResponse<HotAnimeCollection>(cancellationToken)
                 .ConfigureAwait(false);
         }
 
         /// <inheritdoc/>
-        public async Task<MainPage> GetMainPageData(CancellationToken cancellationToken = default)
+        public async Task<Response<MainPage>> GetMainPageData(CancellationToken cancellationToken = default)
         {
             return await BaseUri
                 .AppendQueryParam("request", "main")
                 .AppendAniDbQueryParams()
-                .GetXmlAsync<MainPage>(cancellationToken)
+                .GetAniDbResponse<MainPage>(cancellationToken)
                 .ConfigureAwait(false);
         }
 
         /// <inheritdoc/>
-        public async Task<RandomRecommendations> GetRandomRecommendationAnime(CancellationToken cancellationToken = default)
+        public async Task<Response<RandomRecommendations>> GetRandomRecommendationAnime(CancellationToken cancellationToken = default)
         {
             return await BaseUri
                 .AppendQueryParam("request", "randomrecommendation")
                 .AppendAniDbQueryParams()
-                .GetXmlAsync<RandomRecommendations>(cancellationToken)
+                .GetAniDbResponse<RandomRecommendations>(cancellationToken)
                 .ConfigureAwait(false);
         }
 
         /// <inheritdoc/>
-        public async Task<RandomSimilar> GetRandomSimilarAnime(CancellationToken cancellationToken = default)
+        public async Task<Response<RandomSimilar>> GetRandomSimilarAnime(CancellationToken cancellationToken = default)
         {
             return await BaseUri
                 .AppendQueryParam("request", "randomsimilar")
                 .AppendAniDbQueryParams()
-                .GetXmlAsync<RandomSimilar>(cancellationToken)
+                .GetAniDbResponse<RandomSimilar>(cancellationToken)
                 .ConfigureAwait(false);
         }
 
         /// <inheritdoc/>
-        public async Task<HintCollection> GetUserHints(string username, string password, CancellationToken cancellationToken = default)
+        public async Task<Response<HintCollection>> GetUserHints(string username, string password, CancellationToken cancellationToken = default)
         {
             return await BaseUri
                 .AppendQueryParam("request", "hints")
@@ -94,19 +93,19 @@ namespace AniDb.Api
                 .AppendQueryParam("type", 1)
                 .AppendQueryParam("output", "xml")
                 .AppendAniDbQueryParams()
-                .GetXmlAsync<HintCollection>(cancellationToken)
+                .GetAniDbResponse<HintCollection>(cancellationToken)
                 .ConfigureAwait(false);
         }
 
         /// <inheritdoc/>
-        public async Task<MyListSummary> GetUserMyListSummmary(string username, string password, CancellationToken cancellationToken = default)
+        public async Task<Response<MyListSummary>> GetUserMyListSummmary(string username, string password, CancellationToken cancellationToken = default)
         {
             return await BaseUri
                 .AppendQueryParam("request", "mylistsummary")
                 .AppendQueryParam("user", username)
                 .AppendQueryParam("password", password)
                 .AppendAniDbQueryParams()
-                .GetXmlAsync<MyListSummary>(cancellationToken)
+                .GetAniDbResponse<MyListSummary>(cancellationToken)
                 .ConfigureAwait(false);
         }
     }
