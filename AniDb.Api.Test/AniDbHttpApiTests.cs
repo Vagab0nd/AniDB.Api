@@ -23,7 +23,23 @@ namespace AniDb.Api.Test
             var response = await this.target.GetAnime(17709);
 
             //assert
+            response.Data.Should().NotBeNull();
+        }
+
+        [TestMethod]
+        public async Task GetAnime_should_deserialize_error_xml()
+        {
+            //arrange
+            using var httpTest = new HttpTest();
+            var xmlResponse = ResourcesHelper.GetStringResource("ErrorResponse.txt");
+            httpTest.RespondWith(xmlResponse);
+
+            //act
+            var response = await this.target.GetAnime(int.MaxValue);
+
+            //assert
             response.Should().NotBeNull();
+            response.ErrorMessage.Should().NotBeNullOrWhiteSpace();
         }
 
         [TestMethod]
@@ -53,7 +69,7 @@ namespace AniDb.Api.Test
             var response = await this.target.GetMainPageData();
 
             //assert
-            response.Should().NotBeNull();
+            response.Data.Should().NotBeNull();
         }
 
         [TestMethod]
@@ -68,7 +84,7 @@ namespace AniDb.Api.Test
             var response = await this.target.GetUserHints("username", "password");
 
             //assert
-            response.Should().NotBeNull();
+            response.Data.Should().NotBeNull();
         }
 
         [TestMethod]
@@ -83,7 +99,7 @@ namespace AniDb.Api.Test
             var response = await this.target.GetUserMyListSummmary("username", "password");
 
             //assert
-            response.Should().NotBeNull();
+            response.Data.Should().NotBeNull();
         }
 
         [TestMethod]
@@ -98,7 +114,7 @@ namespace AniDb.Api.Test
             var response = await this.target.GetRandomRecommendationAnime();
 
             //assert
-            response.Should().NotBeNull();
+            response.Data.Should().NotBeNull();
         }
 
         [TestMethod]
@@ -113,7 +129,7 @@ namespace AniDb.Api.Test
             var response = await this.target.GetRandomSimilarAnime();
 
             //assert
-            response.Should().NotBeNull();
+            response.Data.Should().NotBeNull();
         }
     }
 }
