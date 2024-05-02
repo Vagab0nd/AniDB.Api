@@ -12,10 +12,15 @@ namespace AniDb.Api.Test
         public TestContext TestContext { get; set; }
 
         [TestMethod]
-        public async Task GetAnime_should_return_anime()
+        [DataRow(17709)]
+        [DataRow(12519)]
+        [DataRow(4521)]
+        [DataRow(584)]
+        [DataRow(2369)]
+        public async Task GetAnime_should_return_anime(int animeId)
         {
             //act
-            var response = await this.target.GetAnime(17709);
+            var response = await this.target.GetAnime(animeId);
 
             //assert
             response.Data.Should().NotBeNull();
