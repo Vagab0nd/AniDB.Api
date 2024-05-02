@@ -2,6 +2,9 @@
 using Flurl.Http;
 using Flurl.Http.Xml;
 using AniDb.Api.Models.Common;
+using System.Xml.Linq;
+using System.Xml;
+using System.Xml.Serialization;
 
 namespace AniDb.Api.Infrastracture
 {
@@ -19,30 +22,39 @@ namespace AniDb.Api.Infrastracture
             return url;
         }
 
-        //TODO: "Peek" root element in xml to determine if error.
+        //TODO: Improve deserialization performance.
         public static async Task<Response<T>> GetAniDbResponse<T>(this Url url, CancellationToken cancellationToken = default) where T: class
         {
-            var response = new FlurlRequest(url).GetAsync(cancellationToken: cancellationToken);
+            var responseXmlDoc = await new FlurlRequest(url)
+                .GetXDocumentAsync(cancellationToken: cancellationToken);            
 
-            try
+            using XmlReader reader = responseXmlDoc.CreateReader();
+            if(IsErrorModel(responseXmlDoc))
             {
-                var error = await response.ReceiveXml<Error>();
+                var error = MicrosoftXmlSerializer.Default.Deserialize<Error>(responseXmlDoc.ToString());
                 return new Response<T>
                 {
                     ErrorMessage = error.Text
                 };
             }
-            catch
+            else
             {
-                var data = await response.ReceiveXml<T>();
-                return data == null
-                    ? throw new InvalidOperationException("AniDB xml data is null")
-                    : new Response<T>
+                var data = MicrosoftXmlSerializer.Default.Deserialize<T>(responseXmlDoc.ToString());
+                return new Response<T>
                 {
                     Data = data
                 };
+            };
+        }
+
+        private static bool IsErrorModel(XDocument xmlDoc)
+        {
+            if (xmlDoc == null)
+            {
+                throw new ArgumentNullException(nameof(xmlDoc));
             }
 
+            return xmlDoc.Root?.Name == "error" || xmlDoc.Descendants("error").Any();
         }
     }
 }
