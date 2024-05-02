@@ -5,9 +5,9 @@ namespace AniDb.Api.Models.Anime
     public record AnimeRating
     {
         [XmlAttribute(AttributeName = "count")]
-        public int Votes { get; set; }
+        public int Votes { get; init; }
 
         [XmlText]
-        public decimal Value { get; set; }
+        public decimal Value { get; init; }
     }
 }
