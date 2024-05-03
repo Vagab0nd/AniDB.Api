@@ -5,7 +5,7 @@ namespace AniDb.Api.Models.Anime
     public record Recommendation
     {
         [XmlAttribute(AttributeName = "type")]
-        public string Type { get; init; } = null!;
+        public RecommendationType Type { get; init; }
 
         [XmlAttribute(AttributeName = "uid")]
         public string UserId { get; init; } = null!;
