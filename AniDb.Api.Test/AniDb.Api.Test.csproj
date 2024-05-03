@@ -7,13 +7,6 @@
     <EmbeddedResource Include="Resources\*.txt" />
   </ItemGroup>
   <ItemGroup>
-    <None Remove="Resources\ErrorResponse.txt" />
-    <None Remove="Resources\HotAnimeResponse.txt" />
-    <None Remove="Resources\MainPageResponse.txt" />
-    <None Remove="Resources\RandomRecommendationResponse.txt" />
-    <None Remove="Resources\RandomSimilarResponse.txt" />
-  </ItemGroup>
-  <ItemGroup>
     <EmbeddedResource Include="Resources\anime-titles.xml.gz" />
   </ItemGroup>
   <ItemGroup>

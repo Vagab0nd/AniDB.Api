@@ -12,13 +12,19 @@ namespace AniDb.Api.Test
         public TestContext TestContext { get; set; }
 
         [TestMethod]
-        public async Task GetAnime_should_return_anime()
+        [DataRow(17709)]
+        [DataRow(12519)]
+        [DataRow(4521)]
+        [DataRow(584)]
+        [DataRow(2369)]
+        [DataRow(979)]
+        public async Task GetAnime_should_return_anime(int animeId)
         {
             //act
-            var response = await this.target.GetAnime(17709);
+            var response = await this.target.GetAnime(animeId);
 
             //assert
-            response.Should().NotBeNull();
+            response.Data.Should().NotBeNull();
         }
 
         [TestMethod]
@@ -28,7 +34,7 @@ namespace AniDb.Api.Test
             var response = await this.target.GetHotAnime();
 
             //assert
-            response.Should().NotBeNull();
+            response.Data.Should().NotBeNull();
         }
 
         [TestMethod]
@@ -38,7 +44,7 @@ namespace AniDb.Api.Test
             var response = await this.target.GetMainPageData();
 
             //assert
-            response.Should().NotBeNull();
+            response.Data.Should().NotBeNull();
         }
 
         [TestMethod]
@@ -51,7 +57,7 @@ namespace AniDb.Api.Test
                 );
 
             //assert
-            response.Should().NotBeNull();
+            response.Data.Should().NotBeNull();
         }
 
         [TestMethod]
@@ -61,7 +67,7 @@ namespace AniDb.Api.Test
             var response = await this.target.GetRandomRecommendationAnime();
 
             //assert
-            response.Should().NotBeNull();
+            response.Data.Should().NotBeNull();
         }
 
         [TestMethod]
@@ -71,7 +77,7 @@ namespace AniDb.Api.Test
             var response = await this.target.GetRandomSimilarAnime();
 
             //assert
-            response.Should().NotBeNull();
+            response.Data.Should().NotBeNull();
         }
     }
 }

@@ -12,7 +12,7 @@ namespace AniDb.Api.Models.MainPage
         public bool Restricted { get; set; }
 
         [XmlElement(ElementName = "type")]
-        public string Type { get; set; } = null!;
+        public AnimeType Type { get; set; }
 
         [XmlElement(ElementName = "episodecount")]
         public int EpisodeCount { get; set; }
