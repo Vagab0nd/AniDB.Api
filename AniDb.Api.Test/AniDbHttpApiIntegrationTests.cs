@@ -56,7 +56,7 @@ namespace AniDb.Api.Test
                 );
 
             //assert
-            response.Should().NotBeNull();
+            response.Data.Should().NotBeNull();
         }
 
         [TestMethod]
