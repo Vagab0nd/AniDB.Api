@@ -7,6 +7,7 @@ namespace AniDb.Api.Models.Anime
         [XmlAttribute(AttributeName = "id")]
         public string CreatorId { get; init; } = null!;
 
+        // Too many values to create enum
         [XmlAttribute(AttributeName = "type")]
         public string Type { get; init; } = null!;
 

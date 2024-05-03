@@ -8,7 +8,7 @@ namespace AniDb.Api.Models.Anime
         public string CharacterId { get; init; } = null!;
 
         [XmlAttribute(AttributeName = "type")]
-        public string Type { get; init; } = null!;
+        public CharacterType Type { get; init; }
 
         [XmlAttribute(AttributeName = "update")]
         public string Update { get; init; } = string.Empty;

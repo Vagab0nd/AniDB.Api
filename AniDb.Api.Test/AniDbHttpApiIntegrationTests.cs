@@ -17,6 +17,7 @@ namespace AniDb.Api.Test
         [DataRow(4521)]
         [DataRow(584)]
         [DataRow(2369)]
+        [DataRow(979)]
         public async Task GetAnime_should_return_anime(int animeId)
         {
             //act
