@@ -8,7 +8,7 @@ namespace AniDb.Api.Models.Common
         public string Language { get; set; } = string.Empty;
 
         [XmlAttribute(AttributeName = "type")]
-        public string Type { get; set; } = null!;
+        public TitleType Type { get; set; }
 
         [XmlText]
         public string Text { get; set; } = string.Empty;
