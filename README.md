@@ -38,9 +38,16 @@ dotnet add package AniDb.Api
 
 #### GetAnime
 
-```
+```csharp
 var api = new AniDbHttpApi();
 var anime = await this.api.GetAnime(17709);
+```
+
+#### GetAnimeTitles
+
+```csharp
+var animeTitlesDump = new AniDbAnimeTitles();
+var animeTitles = await this.animeTitlesDump.GetAnimeTitles();
 ```
 
 ### Caching
