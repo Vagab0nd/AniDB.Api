@@ -34,6 +34,21 @@ Download and install library from NuGet Gallery:
 dotnet add package AniDb.Api
 ```
 
+### Usage examples
+
+#### GetAnime
+
+```
+var api = new AniDbHttpApi();
+var anime = await this.api.GetAnime(17709);
+```
+
+### Caching
+
+All users of this API should employ heavy local caching. 
+In case of data dumps (Anime titles) requesting the same dataset multiple times on a single day can get you banned. 
+The same goes for Http API request flooding. You should not request more than one page every two seconds.
+
 ## ☂️ Coverage
 
 Coverage as of right now is:
