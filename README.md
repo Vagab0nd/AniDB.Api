@@ -1,12 +1,12 @@
 [![Build](https://github.com/Vagab0nd/AniDB.Api/actions/workflows/build.yml/badge.svg?branch=main)](https://github.com/Vagab0nd/AniDB.Api/actions/workflows/build.yml)
 ![NuGet Version](https://img.shields.io/nuget/v/AniDb.Api)
+![GitHub Repo stars](https://img.shields.io/github/stars/Vagab0nd/AniDB.Api?style=flat&color=yellow)
+![GitHub Issues or Pull Requests](https://img.shields.io/github/issues/Vagab0nd/AniDB.Api)
+![GitHub License](https://img.shields.io/github/license/Vagab0nd/AniDB.Api?color=blue)
 <!--
 ![GitHub contributors from allcontributors.org](https://img.shields.io/github/all-contributors/Vagab0nd/AniDB.Api)
 ![GitHub forks](https://img.shields.io/github/forks/Vagab0nd/AniDB.Api) 
  -->
-![GitHub Repo stars](https://img.shields.io/github/stars/Vagab0nd/AniDB.Api?style=flat&color=yellow)
-![GitHub Issues or Pull Requests](https://img.shields.io/github/issues/Vagab0nd/AniDB.Api)
-![GitHub License](https://img.shields.io/github/license/Vagab0nd/AniDB.Api?color=blue)
 
 <br />
 <div align="center">
