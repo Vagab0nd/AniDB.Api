@@ -8,25 +8,35 @@
 ![GitHub Issues or Pull Requests](https://img.shields.io/github/issues/Vagab0nd/AniDB.Api)
 ![GitHub License](https://img.shields.io/github/license/Vagab0nd/AniDB.Api?color=blue)
 
-# AniDB.Api
-.Net library that provides wrapper for AniDB API. You need an AniDB account to fully utilize API.
+<br />
+<div align="center">
+  <a href="https://github.com/Vagab0nd/AniDB.Api">
+    <img src="Images/logo.png" alt="Logo" width="80" height="80">
+  </a>
 
-# 📥 Getting Started
+  <h2 align="center">AniDB.Api</h3>
 
-# Install
+  <p align="center">
+    .Net library that provides wrapper for AniDB API!
+  </p>
+</div>
+
+## 📥 Getting Started
+
+### Install
 
 Download and install library from NuGet Gallery:
 ```
 dotnet add package AniDb.Api
 ```
 
-# ☂️ Coverage
+## ☂️ Coverage
 
 Coverage as of right now is:
  - [HTTP API](https://wiki.anidb.net/HTTP_API_Definition)
  - [Titles dump](https://wiki.anidb.net/API#Anime_Titles)
 
-# 📝 Roadmap
+## 📝 Roadmap
 
 - Implement UDP API.
 - Use ISO 639 language codes.
@@ -34,6 +44,6 @@ Coverage as of right now is:
 - Use `DateOnly` in models when migrating to .Net7 or higher - support for `DateOnly` conversion to/from XML.
 - Use `required` keyword instead of null collapse in DTOs when migrating to .Net7 or higher.
 
-# ⚖ License
+## ⚖ License
 
 This project is licensed under the GNU General Public License v3.0 (GPL-3.0) - see the [LICENSE](LICENSE) file for more details.
