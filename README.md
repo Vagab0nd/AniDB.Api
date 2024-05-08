@@ -89,7 +89,7 @@ Coverage as of right now is:
 
 ## ➕ Contributing
 
-See [Contributing doc](/docs/CONTRIBUTING.md).
+See [Contributing doc](CONTRIBUTING.md).
 
 ## ⚖ License
 
