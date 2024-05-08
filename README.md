@@ -39,32 +39,32 @@ dotnet add package AniDb.Api
 #### GetAnime
 
 ```csharp
-var api = new AniDbHttpApi();
+IAniDbHttpApi api = new AniDbHttpApi();
 
 // Pass AniDB anime id.
-var anime = await this.api.GetAnime(17709);
+Response<Anime> anime = await this.api.GetAnime(17709);
 ```
 
 #### GetUserHints
 
 ```csharp
-var api = new AniDbHttpApi();
+IAniDbHttpApi api = new AniDbHttpApi();
 
 // Pass AniDB username and password.
 // This is main password, not the API password specified in the profile.
 // Library doesn't store this data.
-var userHints = await this.api.GetUserHints("MyUsername", "MyPassword");
+Response<HintCollection> userHints = await this.api.GetUserHints("MyUsername", "MyPassword");
 ```
 
 #### GetAnimeTitles
 
 ```csharp
-var animeTitlesDump = new AniDbAnimeTitles();
+IAniDbAnimeTitles animeTitlesDump = new AniDbAnimeTitles();
 
 // Note: Remember to cache results! 
 // Best strategy would be to call this method only from wrapper class
 // that implements pernament (not in memory) caching.
-var animeTitles = await this.animeTitlesDump.GetAnimeTitles();
+AnimeTitlesCollection animeTitles = await this.animeTitlesDump.GetAnimeTitles();
 ```
 
 ### Caching
