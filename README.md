@@ -1,14 +1,16 @@
 <div align="center">
-    <a href="">![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/Vagab0nd/AniDB.Api/build.yml)</a>
-    <a href="">![NuGet Version](https://img.shields.io/nuget/v/AniDb.Api)</a>
-    <a href="">![GitHub Repo stars](https://img.shields.io/github/stars/Vagab0nd/AniDB.Api?style=flat&color=yellow)</a>
-    <a href="">![GitHub Issues or Pull Requests](https://img.shields.io/github/issues/Vagab0nd/AniDB.Api</a>
-    <a href="">![GitHub License](https://img.shields.io/github/license/Vagab0nd/AniDB.Api?color=blue)</a>
+
+![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/Vagab0nd/AniDB.Api/build.yml)
+![NuGet Version](https://img.shields.io/nuget/v/AniDb.Api)
+![GitHub Repo stars](https://img.shields.io/github/stars/Vagab0nd/AniDB.Api?style=flat&color=yellow)
+![GitHub Issues or Pull Requests](https://img.shields.io/github/issues/Vagab0nd/AniDB.Api)
+![GitHub License](https://img.shields.io/github/license/Vagab0nd/AniDB.Api?color=blue)
 <!--
 ![GitHub contributors from allcontributors.org](https://img.shields.io/github/all-contributors/Vagab0nd/AniDB.Api)
 ![GitHub forks](https://img.shields.io/github/forks/Vagab0nd/AniDB.Api) 
  -->
- </div>
+
+</div>
 
 <br />
 <div align="center">
