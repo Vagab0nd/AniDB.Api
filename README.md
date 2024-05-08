@@ -1,4 +1,4 @@
-[![Build](https://github.com/Vagab0nd/AniDB.Api/actions/workflows/build.yml/badge.svg?branch=main)](https://github.com/Vagab0nd/AniDB.Api/actions/workflows/build.yml)
+![GitHub Actions Workflow Status](https://img.shields.io/github/actions/workflow/status/Vagab0nd/AniDB.Api/build.yml)
 ![NuGet Version](https://img.shields.io/nuget/v/AniDb.Api)
 ![GitHub Repo stars](https://img.shields.io/github/stars/Vagab0nd/AniDB.Api?style=flat&color=yellow)
 ![GitHub Issues or Pull Requests](https://img.shields.io/github/issues/Vagab0nd/AniDB.Api)
