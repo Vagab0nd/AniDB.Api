@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<randomsimilar>
+<similar>
+<source aid="6113" restricted="false">
+<title xml:lang="x-jat" type="main">Ga-Rei: Zero</title>
+<picture>65627.jpg</picture>
+</source>
+<target aid="3186" restricted="false">
+<title xml:lang="x-jat" type="main">Blood+</title>
+<picture>295803.jpg</picture>
+</target>
+</similar>
+<similar>
+<source aid="3573" restricted="false">
+<title xml:lang="x-jat" type="main">Hanbun no Tsuki ga Noboru Sora</title>
+<picture>293637.jpg</picture>
+</source>
+<target aid="2169" restricted="false">
+<title xml:lang="x-jat" type="main">Iriya no Sora, UFO no Natsu</title>
+<picture>84059.jpg</picture>
+</target>
+</similar>
+<similar>
+<source aid="6466" restricted="false">
+<title xml:lang="x-jat" type="main">Kimi ni Todoke</title>
+<picture>65052.jpg</picture>
+</source>
+<target aid="16981" restricted="false">
+<title xml:lang="x-jat" type="main">Skip to Loafer</title>
+<picture>286582.jpg</picture>
+</target>
+</similar>
+<similar>
+<source aid="1001" restricted="false">
+<title xml:lang="x-jat" type="main">Kyougoku Natsuhiko: Kousetsu Hyaku Monogatari</title>
+<picture>274197.jpg</picture>
+</source>
+<target aid="5113" restricted="false">
+<title xml:lang="x-jat" type="main">Mononoke</title>
+<picture>67285.jpg</picture>
+</target>
+</similar>
+<similar>
+<source aid="4191" restricted="false">
+<title xml:lang="x-jat" type="main">Paprika</title>
+<picture>228328.jpg</picture>
+</source>
+<target aid="154" restricted="false">
+<title xml:lang="x-jat" type="main">Perfect Blue</title>
+<picture>221406.jpg</picture>
+</target>
+</similar>
+<similar>
+<source aid="895" restricted="false">
+<title xml:lang="x-jat" type="main">Planetes</title>
+<picture>221809.jpg</picture>
+</source>
+<target aid="4900" restricted="false">
+<title xml:lang="x-jat" type="main">Moonlight Mile 1st Season: Lift Off</title>
+<picture>11645.jpg</picture>
+</target>
+</similar>
+<similar>
+<source aid="8870" restricted="false">
+<title xml:lang="x-jat" type="main">Sakamichi no Apollon</title>
+<picture>233354.jpg</picture>
+</source>
+<target aid="2320" restricted="false">
+<title xml:lang="x-jat" type="main">Beck: Mongolian Chop Squad</title>
+<picture>23812.jpg</picture>
+</target>
+</similar>
+<similar>
+<source aid="5625" restricted="false">
+<title xml:lang="x-jat" type="main">To Love-Ru: Trouble</title>
+<picture>21280.jpg</picture>
+</source>
+<target aid="1805" restricted="false">
+<title xml:lang="x-jat" type="main">Girls Bravo: First Season</title>
+<picture>287922.jpg</picture>
+</target>
+</similar>
+<similar>
+<source aid="648" restricted="false">
+<title xml:lang="x-jat" type="main">Uchuu Senkan Yamato</title>
+<picture>153041.jpg</picture>
+</source>
+<target aid="77" restricted="false">
+<title xml:lang="x-jat" type="main">Choujikuu Yousai Macross</title>
+<picture>224004.jpg</picture>
+</target>
+</similar>
+<similar>
+<source aid="10750" restricted="false">
+<title xml:lang="x-jat" type="main">Yuuki Yuuna wa Yuusha de Aru</title>
+<picture>161067.jpg</picture>
+</source>
+<target aid="8069" restricted="false">
+<title xml:lang="x-jat" type="main">Mahou Shoujo Madoka Magica</title>
+<picture>224383.jpg</picture>
+</target>
+</similar>
+</randomsimilar>

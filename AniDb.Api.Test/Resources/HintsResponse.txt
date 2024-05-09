@@ -1,6 +1,0 @@
-﻿<hints uid="40237" type="1">
-    <hint adddate="2015-03-23">
-        <relid>5</relid>
-        <calculated>8.09</calculated>
-    </hint>
-</hints>
