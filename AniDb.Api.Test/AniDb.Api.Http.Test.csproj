@@ -16,6 +16,6 @@
     <PackageReference Include="MSTest.TestFramework" Version="3.3.1" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\AniDb.Api\AniDb.Api.csproj" />
+    <ProjectReference Include="..\AniDb.Api\AniDb.Api.Http.csproj" />
   </ItemGroup>
 </Project>

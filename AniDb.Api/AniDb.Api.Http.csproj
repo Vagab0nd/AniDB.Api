@@ -6,17 +6,17 @@
     <LangVersion>latest</LangVersion>
 	<!--Package options-->
 	<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-	<Version>0.4.1</Version>
+	<Version>0.5.0</Version>
 	<Authors>Vagab0nd</Authors>
 	<Company>Vagab0nd</Company>
-	<Description>.Net library that provides wrapper for AniDB API.</Description>
+	<Description>.Net library that provides wrapper for AniDB Http API.</Description>
 	<PackageLicenseExpression></PackageLicenseExpression>
 	<PackageLicenseFile>LICENSE</PackageLicenseFile>
 	<PackageIcon>logo.png</PackageIcon>
 	<PackageProjectUrl>https://github.com/Vagab0nd/AniDB.Api</PackageProjectUrl>
 	<RepositoryUrl>https://github.com/Vagab0nd/AniDB.Api</RepositoryUrl>
 	<RepositoryType>Git</RepositoryType>
-	<PackageTags>anidb api anime</PackageTags>
+	<PackageTags>anidb api anime http</PackageTags>
 	<PackageReadmeFile>README.md</PackageReadmeFile>
 	<PackageReleaseNotes>Add logo.</PackageReleaseNotes>
   </PropertyGroup>
