@@ -1,0 +1,44 @@
+<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<TargetFrameworks>net6.0;net8.0</TargetFrameworks>
+		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
+		<LangVersion>latest</LangVersion>
+		<!--Package options-->
+		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+		<Version>0.5.0</Version>
+		<Authors>Michał Kurek &amp; Contributors</Authors>
+		<Description>.Net library that provides wrapper for AniDB Http API.</Description>
+		<PackageLicenseExpression></PackageLicenseExpression>
+		<PackageLicenseFile>LICENSE</PackageLicenseFile>
+		<PackageIcon>logo.png</PackageIcon>
+		<PackageProjectUrl>https://github.com/Vagab0nd/AniDB.Api</PackageProjectUrl>
+		<RepositoryUrl>https://github.com/Vagab0nd/AniDB.Api</RepositoryUrl>
+		<RepositoryType>Git</RepositoryType>
+		<PackageTags>anidb api anime http udp</PackageTags>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
+		<PackageReleaseNotes>Init.</PackageReleaseNotes>
+	</PropertyGroup>
+	<ItemGroup>
+		<ProjectReference Include="..\AniDB.Api.Http\AniDB.Api.Http.csproj" />
+	</ItemGroup>
+	<ItemGroup>
+		<None Include="..\LICENSE">
+			<Pack>True</Pack>
+			<PackagePath></PackagePath>
+		</None>
+		<None Include="README.md">
+			<Pack>True</Pack>
+			<PackagePath>\</PackagePath>
+		</None>
+		<None Include="..\Images\logo.png">
+			<Pack>True</Pack>
+			<PackagePath></PackagePath>
+		</None>
+	</ItemGroup>
+	<ItemGroup>
+		<AssemblyAttribute Include="System.Runtime.CompilerServices.InternalsVisibleToAttribute">
+			<_Parameter1>$(AssemblyName).Test</_Parameter1>
+		</AssemblyAttribute>
+	</ItemGroup>
+</Project>
