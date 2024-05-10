@@ -1,0 +1,103 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<hotanime>
+<anime id="18104" restricted="false">
+<episodecount>12</episodecount>
+<startdate>2024-04-08</startdate>
+<enddate>2024-06</enddate>
+<title xml:lang="x-jat" type="main">Mushoku Tensei II: Isekai Ittara Honki Dasu (2024)</title>
+<ratings>
+<permanent count="53">7.65</permanent>
+<temporary count="54">7.45</temporary>
+</ratings>
+<picture>301311.jpg</picture>
+</anime>
+<anime id="17709" restricted="false">
+<episodecount>24</episodecount>
+<startdate>2024-04-05</startdate>
+<title xml:lang="x-jat" type="main">Tensei Shitara Slime Datta Ken (2024)</title>
+<ratings>
+<permanent count="44">6.37</permanent>
+<temporary count="44">7.11</temporary>
+</ratings>
+<picture>297217.jpg</picture>
+</anime>
+<anime id="17221" restricted="false">
+<episodecount>25</episodecount>
+<startdate>2024-04-02</startdate>
+<title xml:lang="x-jat" type="main">Ookami to Koushinryou: Merchant Meets the Wise Wolf</title>
+<ratings>
+<permanent count="75">8.22</permanent>
+<temporary count="76">7.73</temporary>
+</ratings>
+<picture>302190.jpg</picture>
+</anime>
+<anime id="17431" restricted="false">
+<episodecount>11</episodecount>
+<startdate>2024-04-10</startdate>
+<title xml:lang="x-jat" type="main">Kono Subarashii Sekai ni Shukufuku o! 3</title>
+<ratings>
+<permanent count="44">7.53</permanent>
+<temporary count="45">7.48</temporary>
+</ratings>
+<picture>301312.jpg</picture>
+</anime>
+<anime id="17686" restricted="false">
+<episodecount>12</episodecount>
+<startdate>2024-04-05</startdate>
+<title xml:lang="x-jat" type="main">Maou no Ore ga Dorei Elf o Yome ni Shitanda ga, Dou Medereba Ii?</title>
+<ratings>
+<permanent count="48">5.60</permanent>
+<temporary count="48">6.52</temporary>
+</ratings>
+<picture>299284.jpg</picture>
+</anime>
+<anime id="18201" restricted="false">
+<episodecount>12</episodecount>
+<startdate>2024-04-02</startdate>
+<title xml:lang="x-jat" type="main">Re:Monster</title>
+<ratings>
+<permanent count="55">3.96</permanent>
+<temporary count="57">5.57</temporary>
+</ratings>
+<picture>300468.jpg</picture>
+</anime>
+<anime id="17098" restricted="false">
+<episodecount>13</episodecount>
+<startdate>2024-04-05</startdate>
+<title xml:lang="x-jat" type="main">Mahouka Koukou no Rettousei (2024)</title>
+<ratings>
+<permanent count="29">5.93</permanent>
+<temporary count="29">6.43</temporary>
+</ratings>
+<picture>301660.jpg</picture>
+</anime>
+<anime id="17702" restricted="false">
+<startdate>2024-04-02</startdate>
+<title xml:lang="x-jat" type="main">Tensei Shitara Dai Nana Ouji Datta no de, Kimamani Majutsu o Kiwamemasu</title>
+<ratings>
+<permanent count="53">4.76</permanent>
+<temporary count="54">6.03</temporary>
+</ratings>
+<picture>299446.jpg</picture>
+</anime>
+<anime id="18247" restricted="false">
+<episodecount>12</episodecount>
+<startdate>2024-04-08</startdate>
+<title xml:lang="x-jat" type="main">Lv2 kara Cheat datta Moto Yuusha Kouho no Mattari Isekai Life</title>
+<ratings>
+<permanent count="43">4.84</permanent>
+<temporary count="43">6.27</temporary>
+</ratings>
+<picture>300530.jpg</picture>
+</anime>
+<anime id="17550" restricted="false">
+<episodecount>12</episodecount>
+<startdate>2024-04-13</startdate>
+<title xml:lang="x-jat" type="main">Kaijuu 8 Gou</title>
+<ratings>
+<permanent count="49">7.40</permanent>
+<temporary count="50">7.49</temporary>
+</ratings>
+<picture>297170.jpg</picture>
+</anime>
+</hotanime>
