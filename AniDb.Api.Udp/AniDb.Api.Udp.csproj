@@ -8,21 +8,17 @@
 		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
 		<Version>0.5.0</Version>
 		<Authors>Michał Kurek &amp; Contributors</Authors>
-		<Description>.Net library that provides wrapper for AniDB Http API.</Description>
+		<Description>.Net library that provides wrapper for AniDB Udp API.</Description>
 		<PackageLicenseExpression></PackageLicenseExpression>
 		<PackageLicenseFile>LICENSE</PackageLicenseFile>
 		<PackageIcon>logo.png</PackageIcon>
 		<PackageProjectUrl>https://github.com/Vagab0nd/AniDB.Api</PackageProjectUrl>
 		<RepositoryUrl>https://github.com/Vagab0nd/AniDB.Api</RepositoryUrl>
 		<RepositoryType>Git</RepositoryType>
-		<PackageTags>anidb api anime http udp</PackageTags>
+		<PackageTags>anidb api anime udp</PackageTags>
 		<PackageReadmeFile>README.md</PackageReadmeFile>
 		<PackageReleaseNotes>Init.</PackageReleaseNotes>
 	</PropertyGroup>
-	<ItemGroup>
-		<ProjectReference Include="..\AniDB.Api.Http\AniDB.Api.Http.csproj" />
-		<ProjectReference Include="..\AniDB.Api.Udp\AniDB.Api.Udp.csproj" />
-	</ItemGroup>
 	<ItemGroup>
 		<None Include="..\LICENSE">
 			<Pack>True</Pack>
