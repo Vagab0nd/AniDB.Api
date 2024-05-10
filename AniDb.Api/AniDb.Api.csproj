@@ -20,8 +20,8 @@
 		<PackageReleaseNotes>Init.</PackageReleaseNotes>
 	</PropertyGroup>
 	<ItemGroup>
-		<ProjectReference Include="..\AniDB.Api.Http\AniDB.Api.Http.csproj" />
-		<ProjectReference Include="..\AniDB.Api.Udp\AniDB.Api.Udp.csproj" />
+		<ProjectReference Include="..\AniDb.Api.Http\AniDb.Api.Http.csproj" />
+		<ProjectReference Include="..\AniDb.Api.Udp\AniDb.Api.Udp.csproj" />
 	</ItemGroup>
 	<ItemGroup>
 		<None Include="..\LICENSE">
