@@ -13,12 +13,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AniDb.Api.Http.Test", "AniD
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "repo", "repo", "{AF485882-9C3B-41E1-A178-EAE73CAE9F20}"
 	ProjectSection(SolutionItems) = preProject
+		Directory.Build.props = Directory.Build.props
 		README.md = README.md
 	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AniDb.Api", "AniDb.Api\AniDb.Api.csproj", "{C3B12316-610F-46CC-9879-5575831E23CA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AniDb.Api.Udp", "AniDb.Api.Udp\AniDb.Api.Udp.csproj", "{46CCE8DF-7A1F-44FF-A864-4F54AD24DF5A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AniDb.Api.Udp", "AniDb.Api.Udp\AniDb.Api.Udp.csproj", "{46CCE8DF-7A1F-44FF-A864-4F54AD24DF5A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
