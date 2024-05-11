@@ -1,13 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFrameworks>net6.0;net8.0</TargetFrameworks>
-    <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>enable</Nullable>
-    <LangVersion>latest</LangVersion>
 	<!--Package options-->
 	<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-	<Version>0.5.0</Version>
-	<Authors>Michał Kurek &amp; Contributors</Authors>
 	<Description>.Net library that provides wrapper for AniDB Http API.</Description>
 	<PackageLicenseExpression></PackageLicenseExpression>
 	<PackageLicenseFile>LICENSE</PackageLicenseFile>
