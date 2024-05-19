@@ -34,7 +34,7 @@ Download and install library from NuGet Gallery:
 dotnet add package AniDb.Api
 ```
 
-or download separately nugets for either Http or Udp API:
+or install separately nugets for either Http or Udp API:
 
 ```
 dotnet add package AniDb.Api.Http
