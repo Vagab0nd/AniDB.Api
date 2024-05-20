@@ -4,20 +4,17 @@ using Flurl.Http.Xml;
 using AniDb.Api.Models.Common;
 using System.Xml.Linq;
 using System.Xml;
+using AniDb.Api.Core;
 
 namespace AniDb.Api.Infrastracture
 {
     internal static class UrlExtensions
     {
-        private const string ClientName = "anidbapidotnet";
-        private const int ClientVersion = 1;
-        private const int ProtocolVersion = 1;
-
         public static Url AppendAniDbQueryParams(this Url url)
         {
-            url.AppendQueryParam("client", ClientName);
-            url.AppendQueryParam("clientver", ClientVersion);
-            url.AppendQueryParam("protover", ProtocolVersion);
+            url.AppendQueryParam("client", ClientInfo.ClientName);
+            url.AppendQueryParam("clientver", ClientInfo.ClientVersion);
+            url.AppendQueryParam("protover", ClientInfo.HttpProtocolVersion);
             return url;
         }
 

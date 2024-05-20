@@ -2,16 +2,15 @@
 	<PropertyGroup>
 		<!--Package options-->
 		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-		<Description>.Net library that provides wrapper for AniDB Udp API.</Description>
 		<PackageLicenseExpression></PackageLicenseExpression>
 		<PackageLicenseFile>LICENSE</PackageLicenseFile>
 		<PackageIcon>logo.png</PackageIcon>
 		<PackageProjectUrl>https://github.com/Vagab0nd/AniDB.Api</PackageProjectUrl>
 		<RepositoryUrl>https://github.com/Vagab0nd/AniDB.Api</RepositoryUrl>
 		<RepositoryType>Git</RepositoryType>
-		<PackageTags>anidb api anime udp</PackageTags>
+		<PackageTags>anidb api anime</PackageTags>
 		<PackageReadmeFile>README.md</PackageReadmeFile>
-		<PackageReleaseNotes>Dependency on core project.</PackageReleaseNotes>
+		<PackageReleaseNotes>Init.</PackageReleaseNotes>
 	</PropertyGroup>
 	<ItemGroup>
 		<None Include="..\LICENSE">
@@ -31,8 +30,5 @@
 		<AssemblyAttribute Include="System.Runtime.CompilerServices.InternalsVisibleToAttribute">
 			<_Parameter1>$(AssemblyName).Test</_Parameter1>
 		</AssemblyAttribute>
-	</ItemGroup>
-	<ItemGroup>
-		<ProjectReference Include="..\AniDb.Api.Core\AniDb.Api.Core.csproj" />
 	</ItemGroup>
 </Project>
