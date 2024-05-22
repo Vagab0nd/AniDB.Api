@@ -21,6 +21,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AniDb.Api", "AniDb.Api\AniD
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AniDb.Api.Udp", "AniDb.Api.Udp\AniDb.Api.Udp.csproj", "{46CCE8DF-7A1F-44FF-A864-4F54AD24DF5A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AniDb.Api.Core", "AniDb.Api.Core\AniDb.Api.Core.csproj", "{741807FC-8B9F-4C45-A417-29600C67651A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -43,6 +45,10 @@ Global
 		{46CCE8DF-7A1F-44FF-A864-4F54AD24DF5A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{46CCE8DF-7A1F-44FF-A864-4F54AD24DF5A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{46CCE8DF-7A1F-44FF-A864-4F54AD24DF5A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{741807FC-8B9F-4C45-A417-29600C67651A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{741807FC-8B9F-4C45-A417-29600C67651A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{741807FC-8B9F-4C45-A417-29600C67651A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{741807FC-8B9F-4C45-A417-29600C67651A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -52,6 +58,7 @@ Global
 		{B9659A98-D8BF-4E39-BF9A-514C7D0BCFD4} = {D65F50F0-481F-4475-8E1A-036D7B985F66}
 		{C3B12316-610F-46CC-9879-5575831E23CA} = {B23F3449-C1B1-4FDB-ABB0-A2A60CE318CE}
 		{46CCE8DF-7A1F-44FF-A864-4F54AD24DF5A} = {B23F3449-C1B1-4FDB-ABB0-A2A60CE318CE}
+		{741807FC-8B9F-4C45-A417-29600C67651A} = {B23F3449-C1B1-4FDB-ABB0-A2A60CE318CE}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {3158282C-8D69-4344-B3FC-09AD33541DFC}
