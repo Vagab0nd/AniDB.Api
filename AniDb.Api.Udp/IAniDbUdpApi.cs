@@ -59,6 +59,27 @@
         /// <returns></returns>
         object NotifyGet(string type, int id);
 
+        #endregion
+
+        #region Notification Commands
+
+        /// <summary>
+        /// Add Anime or Group to Notify List.
+        /// </summary>
+        /// <param name="animeId"></param>
+        /// <param name="groupId"></param>
+        /// <param name="type"></param>
+        /// <param name="priority"></param>
+        /// <returns></returns>
+        object NotificationAdd(string? animeId, string? groupId, int type, int priority);
+
+        /// <summary>
+        /// Remove Anime or Group from Notify List.
+        /// </summary>
+        /// <param name="animeId"></param>
+        /// <param name="groupId"></param>
+        /// <returns></returns>
+        object NotificationDelete(string? animeId, string? groupId);
 
         #endregion
     }
