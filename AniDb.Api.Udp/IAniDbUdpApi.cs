@@ -82,5 +82,52 @@
         object NotificationDelete(string? animeId, string? groupId);
 
         #endregion
+
+        #region Buddy Commands
+
+        /// <summary>
+        /// Add a user to Buddy List.
+        /// </summary>
+        /// <param name="buddyId"></param>
+        /// <param name="buddyName"></param>
+        /// <returns></returns>
+        object BuddyAdd(int buddyId, string buddyName);
+
+        /// <summary>
+        /// Remove a user from Buddy List
+        /// </summary>
+        /// <param name="buddyId"></param>
+        /// <returns></returns>
+        object BuddyDelete(int buddyId);
+
+        /// <summary>
+        /// Accept user as Buddy.
+        /// </summary>
+        /// <param name="userId"></param>
+        /// <returns></returns>
+        object BuddyAccept(int userId);
+
+        /// <summary>
+        /// Deny user as Buddy.
+        /// </summary>
+        /// <param name="userId"></param>
+        /// <returns></returns>
+        object BuddyDeny(int userId);
+
+        /// <summary>
+        /// Retrieve Buddy List.
+        /// </summary>
+        /// <param name="startAt"></param>
+        /// <returns></returns>
+        object BuddyList(int? startAt);
+
+        /// <summary>
+        /// Retrieve Buddy States.
+        /// </summary>
+        /// <param name="startAt"></param>
+        /// <returns></returns>
+        object BuddyState(int? startAt);
+
+        #endregion
     }
 }
