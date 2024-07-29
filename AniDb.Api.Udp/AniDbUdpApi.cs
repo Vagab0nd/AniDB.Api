@@ -1,6 +1,6 @@
 ﻿namespace AniDb.Api.Udp
 {
-    public class AniDbUdpApi : IAniDbUdpApi
+    public class AniDbUdpApi(int localPort) : AniDbUdpClient(localPort), IAniDbUdpApi
     {
         public object Auth(string username, string password, bool nat = false, bool comp = false, bool imgServer = false, int? mtu = null)
         {
