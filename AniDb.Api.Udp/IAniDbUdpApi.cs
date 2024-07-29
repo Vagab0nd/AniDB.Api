@@ -129,5 +129,23 @@
         object BuddyState(int? startAt);
 
         #endregion
+
+        #region Data Commands
+
+        //TODO: Implement Data commands in V3.
+
+        #endregion
+
+        #region MyList Commands
+
+        //TODO: Implement MyList commands in V2.
+
+        #endregion
+
+        #region Misc Commands
+
+        //TODO: Implement Misc commands in V4.
+
+        #endregion
     }
 }
