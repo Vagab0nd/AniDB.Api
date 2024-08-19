@@ -59,6 +59,92 @@
         /// <returns></returns>
         object NotifyGet(string type, int id);
 
+        #endregion
+
+        #region Notification Commands
+
+        /// <summary>
+        /// Add Anime or Group to Notify List.
+        /// </summary>
+        /// <param name="animeId"></param>
+        /// <param name="groupId"></param>
+        /// <param name="type"></param>
+        /// <param name="priority"></param>
+        /// <returns></returns>
+        object NotificationAdd(string? animeId, string? groupId, int type, int priority);
+
+        /// <summary>
+        /// Remove Anime or Group from Notify List.
+        /// </summary>
+        /// <param name="animeId"></param>
+        /// <param name="groupId"></param>
+        /// <returns></returns>
+        object NotificationDelete(string? animeId, string? groupId);
+
+        #endregion
+
+        #region Buddy Commands
+
+        /// <summary>
+        /// Add a user to Buddy List.
+        /// </summary>
+        /// <param name="buddyId"></param>
+        /// <param name="buddyName"></param>
+        /// <returns></returns>
+        object BuddyAdd(int buddyId, string buddyName);
+
+        /// <summary>
+        /// Remove a user from Buddy List
+        /// </summary>
+        /// <param name="buddyId"></param>
+        /// <returns></returns>
+        object BuddyDelete(int buddyId);
+
+        /// <summary>
+        /// Accept user as Buddy.
+        /// </summary>
+        /// <param name="userId"></param>
+        /// <returns></returns>
+        object BuddyAccept(int userId);
+
+        /// <summary>
+        /// Deny user as Buddy.
+        /// </summary>
+        /// <param name="userId"></param>
+        /// <returns></returns>
+        object BuddyDeny(int userId);
+
+        /// <summary>
+        /// Retrieve Buddy List.
+        /// </summary>
+        /// <param name="startAt"></param>
+        /// <returns></returns>
+        object BuddyList(int? startAt);
+
+        /// <summary>
+        /// Retrieve Buddy States.
+        /// </summary>
+        /// <param name="startAt"></param>
+        /// <returns></returns>
+        object BuddyState(int? startAt);
+
+        #endregion
+
+        #region Data Commands
+
+        //TODO: Implement Data commands in V3.
+
+        #endregion
+
+        #region MyList Commands
+
+        //TODO: Implement MyList commands in V2.
+
+        #endregion
+
+        #region Misc Commands
+
+        //TODO: Implement Misc commands in V4.
 
         #endregion
     }
