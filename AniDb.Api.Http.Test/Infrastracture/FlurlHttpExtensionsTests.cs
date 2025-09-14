@@ -1,7 +1,7 @@
 ﻿using AniDb.Api.Infrastracture;
 using FluentAssertions;
 using Flurl.Http;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+
 namespace AniDb.Api.Test.Infrastracture
 {
     [TestClass]

@@ -2,11 +2,7 @@
 using FluentAssertions;
 using Flurl.Http;
 using Flurl.Http.Testing;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
-using System;
 using System.Net;
-using System.Threading.Tasks;
-
 
 namespace AniDb.Api.Test.Infrastracture
 {

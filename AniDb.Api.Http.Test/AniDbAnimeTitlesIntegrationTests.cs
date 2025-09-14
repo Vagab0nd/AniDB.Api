@@ -1,10 +1,8 @@
 using FluentAssertions;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
-using System.Threading.Tasks;
 
 namespace AniDb.Api.Test
 {
-    [TestClass, Ignore("Api rate limitted.")]
+    [TestClass, Ignore("Api rate limited.")]
     public class AniDbAnimeTitlesIntegrationTests
     {
         private readonly IAniDbAnimeTitles target = new AniDbAnimeTitles();
