@@ -33,13 +33,11 @@ namespace AniDb.Api.Infrastracture
                     ErrorMessage = error.Text
                 };
             }
-            else
+
+            var data = MicrosoftXmlSerializer.Default.Deserialize<T>(responseXmlDoc.ToString());
+            return new Response<T>
             {
-                var data = MicrosoftXmlSerializer.Default.Deserialize<T>(responseXmlDoc.ToString());
-                return new Response<T>
-                {
-                    Data = data
-                };
+                Data = data
             };
         }
 
