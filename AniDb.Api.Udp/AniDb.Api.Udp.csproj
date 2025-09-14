@@ -3,8 +3,7 @@
 		<!--Package options-->
 		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
 		<Description>.Net library that provides wrapper for AniDB Udp API.</Description>
-		<PackageLicenseExpression></PackageLicenseExpression>
-		<PackageLicenseFile>LICENSE</PackageLicenseFile>
+		<PackageLicenseExpression>GPL-3.0-only</PackageLicenseExpression>
 		<PackageIcon>logo.png</PackageIcon>
 		<PackageProjectUrl>https://github.com/Vagab0nd/AniDB.Api</PackageProjectUrl>
 		<RepositoryUrl>https://github.com/Vagab0nd/AniDB.Api</RepositoryUrl>
@@ -14,17 +13,13 @@
 		<PackageReleaseNotes>Dependency on core project.</PackageReleaseNotes>
 	</PropertyGroup>
 	<ItemGroup>
-		<None Include="..\LICENSE">
-			<Pack>True</Pack>
-			<PackagePath></PackagePath>
-		</None>
 		<None Include="README.md">
 			<Pack>True</Pack>
 			<PackagePath>\</PackagePath>
 		</None>
 		<None Include="..\Images\logo.png">
 			<Pack>True</Pack>
-			<PackagePath></PackagePath>
+			<PackagePath>\</PackagePath>
 		</None>
 	</ItemGroup>
 	<ItemGroup>
