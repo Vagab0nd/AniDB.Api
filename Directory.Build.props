@@ -2,7 +2,7 @@
 <Project>
 	<PropertyGroup>
 		<!--General options-->
-		<TargetFrameworks>net6.0;net8.0</TargetFrameworks>
+		<TargetFrameworks>net8.0</TargetFrameworks>
 		<ImplicitUsings>enable</ImplicitUsings>
 		<Nullable>enable</Nullable>
 		<LangVersion>latest</LangVersion>
@@ -11,7 +11,7 @@
 		<Copyright>Copyright © Michał Kurek &amp; Contributors $([System.DateTime]::Now.ToString('yyyy'))</Copyright>
 		<Product>AniDb.Api</Product>
 		<!--Package options-->
-		<Version>0.6.0</Version>
+		<Version>0.7.0</Version>
 		<Authors>Michał Kurek &amp; Contributors</Authors>	
 	</PropertyGroup>
 </Project>
