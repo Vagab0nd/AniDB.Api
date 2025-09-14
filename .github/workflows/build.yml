@@ -7,7 +7,6 @@ on:
   push:
     branches: [ "main", "release/*" ]
   pull_request:
-    types: [assigned, opened, synchronize, reopened]
   schedule:
     - cron: '0 5 * * 0'
 jobs:
