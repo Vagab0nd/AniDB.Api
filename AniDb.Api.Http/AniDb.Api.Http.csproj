@@ -10,7 +10,7 @@
 	<RepositoryType>Git</RepositoryType>
 	<PackageTags>anidb api anime http</PackageTags>
 	<PackageReadmeFile>README.md</PackageReadmeFile>
-	<PackageReleaseNotes>Dependency on core project.</PackageReleaseNotes>
+	<PackageReleaseNotes>Remove .Net6 support.</PackageReleaseNotes>
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="Flurl.Http" Version="4.0.2" />
