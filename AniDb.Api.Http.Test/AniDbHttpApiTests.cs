@@ -83,26 +83,23 @@ namespace AniDb.Api.Test
             //assert
             response.Data.Episodes.Should().HaveCount(16);
             response.Data.Episodes.Should()
-                .Contain(
-                [
-                    new Episode
-                    {
-                        Titles =
-                        [
-                            new() { Language = "ja", Text = "幸せな叛逆", Type = TitleType.Undefined },
-                            new() { Language = "en", Text = "Fortunate Revolt", Type = TitleType.Undefined },
-                            new() { Language = "fr", Text = "Heureuse révolte", Type = TitleType.Undefined },
-                            new() { Language = "x-jat", Text = "Shiawase na Hangyaku", Type = TitleType.Undefined },
-                        ],
-                        Description = string.Empty,
-                        AirDate = new DateTime(1999, 2, 14),
-                        EpisodeId = "1017",
-                        EpisodeNumber = "7",
-                        PlayLength = "25",
-                        Updated = "2011-07-01",
-                        UpdatedDate = new DateOnly(2021, 7, 1)
-                    }
-                ]);
+                .ContainEquivalentOf(new Episode
+                {
+                    Titles =
+                    [
+                        new() { Language = "ja", Text = "幸せな叛逆", Type = TitleType.Undefined },
+                        new() { Language = "en", Text = "Fortunate Revolt", Type = TitleType.Undefined },
+                        new() { Language = "fr", Text = "Heureuse révolte", Type = TitleType.Undefined },
+                        new() { Language = "x-jat", Text = "Shiawase na Hangyaku", Type = TitleType.Undefined },
+                    ],
+                    Description = "",
+                    AirDate = new DateTime(1999, 2, 14),
+                    EpisodeId = "1017",
+                    EpisodeNumber = "7",
+                    PlayLength = 25,
+                    Updated = "01.07.2011",
+                    UpdatedDate = new DateOnly(2011, 7, 1)
+                });
         }
 
         [TestMethod]

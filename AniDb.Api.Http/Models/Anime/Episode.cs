@@ -20,8 +20,11 @@ namespace AniDb.Api.Models.Anime
         [XmlElement(ElementName = "epno")]
         public string EpisodeNumber { get; init; } = string.Empty;
 
-        [XmlAttribute(AttributeName = "length")]
-        public string PlayLength { get; init; } = string.Empty;
+        /// <summary>
+        /// The play length of episode in minutes. Rounded up to multiple of 5 minutes if over 10 minutes or to 1 minute if less.
+        /// </summary>
+        [XmlElement(ElementName = "length")]
+        public int PlayLength { get; init; }
 
         [XmlAttribute(AttributeName = "update")]
         public string? Updated
