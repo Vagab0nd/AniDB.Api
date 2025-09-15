@@ -9,7 +9,7 @@
 		<RepositoryType>Git</RepositoryType>
 		<PackageTags>anidb api anime http udp</PackageTags>
 		<PackageReadmeFile>README.md</PackageReadmeFile>
-		<PackageReleaseNotes>Remove .Net6 support.</PackageReleaseNotes>
+		<PackageReleaseNotes>Fix and extend episode contract mappings.</PackageReleaseNotes>
 	</PropertyGroup>
 	<ItemGroup>
 		<ProjectReference Include="..\AniDb.Api.Http\AniDb.Api.Http.csproj" />
