@@ -95,7 +95,11 @@ namespace AniDb.Api.Test
                     Description = "",
                     AirDate = new DateTime(1999, 2, 14),
                     EpisodeId = "1017",
-                    EpisodeNumber = "7",
+                    EpisodeNumber = new EpisodeNumber
+                    {
+                        Type = EpisodeType.Normal,
+                        Value = "7"
+                    },
                     PlayLength = 25,
                     Updated = "01.07.2011",
                     UpdatedDate = new DateOnly(2011, 7, 1)
