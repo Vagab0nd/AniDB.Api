@@ -4,6 +4,8 @@ namespace AniDb.Api.Models.Common
 {
     public enum TitleType
     {
+        Undefined = 0,
+        
         [XmlEnum(Name = "main")]
         Main,
         

@@ -5,22 +5,6 @@ namespace AniDb.Api.Models.Anime
 {
     public record Episode
     {
-        [XmlAttribute(AttributeName = "id")]
-        public string EpisodeId { get; init; } = null!;
-
-        [XmlAttribute(AttributeName = "length")]
-        public string PlayLength { get; init; } = string.Empty;
-
-        [XmlAttribute(AttributeName = "update")]
-        public string? Updated
-        {
-            get { return this.UpdatedDate.ToString(); }
-            init { this.UpdatedDate = value != null ? DateOnly.Parse(value) : null; }
-        }
-
-        [XmlIgnore]
-        public DateOnly? UpdatedDate { get; init; }
-
         [XmlElement(ElementName = "title")]
         public Title[] Titles { get; init; } = [];
 
@@ -29,5 +13,27 @@ namespace AniDb.Api.Models.Anime
 
         [XmlElement(ElementName = "airdate")]
         public DateTime AirDate { get; init; }
+
+        [XmlAttribute(AttributeName = "id")]
+        public string EpisodeId { get; init; } = null!;
+
+        [XmlElement("epno")]
+        public EpisodeNumber EpisodeNumber { get; init; } = null!;
+
+        /// <summary>
+        /// The play length of episode in minutes. Rounded up to multiple of 5 minutes if over 10 minutes or to 1 minute if less.
+        /// </summary>
+        [XmlElement(ElementName = "length")]
+        public int PlayLength { get; init; }
+
+        [XmlAttribute(AttributeName = "update")]
+        public string? Updated
+        {
+            get => this.UpdatedDate.ToString();
+            init => this.UpdatedDate = value != null ? DateOnly.Parse(value) : null;
+        }
+
+        [XmlIgnore]
+        public DateOnly? UpdatedDate { get; init; }
     }
 }

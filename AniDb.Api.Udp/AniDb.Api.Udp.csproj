@@ -10,7 +10,7 @@
 		<RepositoryType>Git</RepositoryType>
 		<PackageTags>anidb api anime udp</PackageTags>
 		<PackageReadmeFile>README.md</PackageReadmeFile>
-		<PackageReleaseNotes>Remove .Net6 support.</PackageReleaseNotes>
+		<PackageReleaseNotes>-</PackageReleaseNotes>
 	</PropertyGroup>
 	<ItemGroup>
 		<None Include="README.md">
