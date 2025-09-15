@@ -4,7 +4,7 @@ namespace AniDb.Api.Models.Common
 {
     public record Title
     {
-        [XmlAttribute(AttributeName = "lang")]
+        [XmlAttribute(AttributeName = "xml:lang")]
         public string Language { get; set; } = string.Empty;
 
         [XmlAttribute(AttributeName = "type")]
