@@ -1,6 +1,9 @@
+using AniDb.Api.Models.Anime;
+using AniDb.Api.Models.Hints;
+using AniDb.Api.Models.MainPage;
 using FluentAssertions;
 
-namespace AniDb.Api.Test
+namespace AniDb.Api.Http.Test
 {
     [TestClass]
     public class AniDbHttpApiIntegrationTests
@@ -19,7 +22,7 @@ namespace AniDb.Api.Test
         public async Task GetAnime_should_return_anime(int animeId)
         {
             //act
-            var response = await this.target.GetAnime(animeId);
+            Response<Anime> response = await this.target.GetAnime(animeId, this.TestContext.CancellationTokenSource.Token);
 
             //assert
             response.Data.Should().NotBeNull();
@@ -29,7 +32,7 @@ namespace AniDb.Api.Test
         public async Task GetHotAnime_should_return_hot_anime()
         {
             //act
-            var response = await this.target.GetHotAnime();
+            Response<HotAnimeCollection> response = await this.target.GetHotAnime(this.TestContext.CancellationTokenSource.Token);
 
             //assert
             response.Data.Should().NotBeNull();
@@ -39,7 +42,27 @@ namespace AniDb.Api.Test
         public async Task GetMainPageData_should_return_main_page_data()
         {
             //act
-            var response = await this.target.GetMainPageData();
+            Response<MainPage> response = await this.target.GetMainPageData();
+
+            //assert
+            response.Data.Should().NotBeNull();
+        }
+
+        [TestMethod]
+        public async Task GetRandomRecommendationAnime_should_return_recommendations()
+        {
+            //act
+            Response<RandomRecommendations> response = await this.target.GetRandomRecommendationAnime(this.TestContext.CancellationTokenSource.Token);
+
+            //assert
+            response.Data.Should().NotBeNull();
+        }
+
+        [TestMethod]
+        public async Task GetRandomSimilarAnime_should_return_recommendations()
+        {
+            //act
+            Response<RandomSimilar> response = await this.target.GetRandomSimilarAnime(this.TestContext.CancellationTokenSource.Token);
 
             //assert
             response.Data.Should().NotBeNull();
@@ -49,30 +72,10 @@ namespace AniDb.Api.Test
         public async Task GetUserHints_should_return_hints()
         {
             //act
-            var response = await this.target.GetUserHints(
-                this.TestContext.Properties["Username"]?.ToString(), 
-                this.TestContext.Properties["Password"]?.ToString()
-                );
-
-            //assert
-            response.Data.Should().NotBeNull();
-        }
-
-        [TestMethod]
-        public async Task GetRandomRecommendationAnime_should_return_recommandations()
-        {
-            //act
-            var response = await this.target.GetRandomRecommendationAnime();
-
-            //assert
-            response.Data.Should().NotBeNull();
-        }
-
-        [TestMethod]
-        public async Task GetRandomSimilarAnime_should_return_recommandations()
-        {
-            //act
-            var response = await this.target.GetRandomSimilarAnime();
+            Response<HintCollection> response = await this.target.GetUserHints(
+                TestSecrets.Username ?? throw new InvalidOperationException(),
+                TestSecrets.Password ?? throw new InvalidOperationException(),
+                this.TestContext.CancellationTokenSource.Token);
 
             //assert
             response.Data.Should().NotBeNull();

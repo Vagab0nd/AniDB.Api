@@ -1,10 +1,10 @@
-﻿using AniDb.Api.Models.Anime;
+﻿using AniDb.Api.Http.Test.Resources;
+using AniDb.Api.Models.Anime;
 using AniDb.Api.Models.Common;
-using AniDb.Api.Test.Resources;
 using FluentAssertions;
 using Flurl.Http.Testing;
 
-namespace AniDb.Api.Test
+namespace AniDb.Api.Http.Test
 {
     [TestClass]
     public class AniDbHttpApiTests
@@ -38,8 +38,8 @@ namespace AniDb.Api.Test
             Response<Anime> response = await this.target.GetAnime(17709);
 
             //assert
-            response.Data.Titles.Should().HaveCount(9);
-            response.Data.Titles.Should()
+            response.Data?.Titles.Should().HaveCount(9);
+            response.Data?.Titles.Should()
                 .Contain(
                 [
                     new Title
@@ -78,11 +78,11 @@ namespace AniDb.Api.Test
             httpTest.RespondWith(xmlResponse);
 
             //act
-            Response<Anime> response = await this.target.GetAnime(17709);
+            Response<Anime> response = await this.target.GetAnime(17709, this.TestContext.CancellationTokenSource.Token);
 
             //assert
-            response.Data.Episodes.Should().HaveCount(16);
-            response.Data.Episodes.Should()
+            response.Data?.Episodes.Should().HaveCount(16);
+            response.Data?.Episodes.Should()
                 .ContainEquivalentOf(new Episode
                 {
                     Titles =
@@ -115,7 +115,7 @@ namespace AniDb.Api.Test
             httpTest.RespondWith(xmlResponse);
 
             //act
-            var response = await this.target.GetAnime(int.MaxValue, TestContext.CancellationTokenSource.Token);
+            var response = await this.target.GetAnime(int.MaxValue, this.TestContext.CancellationTokenSource.Token);
 
             //assert
             response.Should().NotBeNull();
@@ -131,7 +131,7 @@ namespace AniDb.Api.Test
             httpTest.RespondWith(xmlResponse);
 
             //act
-            var response = await this.target.GetHotAnime(TestContext.CancellationTokenSource.Token);
+            var response = await this.target.GetHotAnime(this.TestContext.CancellationTokenSource.Token);
 
             //assert
             response.Should().NotBeNull();
@@ -146,7 +146,7 @@ namespace AniDb.Api.Test
             httpTest.RespondWith(xmlResponse);
 
             //act
-            var response = await this.target.GetMainPageData(TestContext.CancellationTokenSource.Token);
+            var response = await this.target.GetMainPageData(this.TestContext.CancellationTokenSource.Token);
 
             //assert
             response.Data.Should().NotBeNull();
@@ -161,7 +161,7 @@ namespace AniDb.Api.Test
             httpTest.RespondWith(xmlResponse);
 
             //act
-            var response = await this.target.GetUserHints("username", "password", TestContext.CancellationTokenSource.Token);
+            var response = await this.target.GetUserHints("username", "password", this.TestContext.CancellationTokenSource.Token);
 
             //assert
             response.Data.Should().NotBeNull();

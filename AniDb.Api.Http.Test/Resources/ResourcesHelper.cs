@@ -1,6 +1,6 @@
 ﻿using System.Reflection;
 
-namespace AniDb.Api.Test.Resources
+namespace AniDb.Api.Http.Test.Resources
 {
     internal static class ResourcesHelper
     {

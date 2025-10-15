@@ -2,7 +2,7 @@
 using FluentAssertions;
 using Flurl.Http;
 
-namespace AniDb.Api.Test.Infrastracture
+namespace AniDb.Api.Http.Test.Infrastructure
 {
     [TestClass]
     public class FlurlHttpExtensionsTests
@@ -11,7 +11,7 @@ namespace AniDb.Api.Test.Infrastracture
         public void TryConfigureClientForUrl_should_configure_client_if_missing()
         {
             //arrange
-            var testUrl = "http://test.com";
+            const string testUrl = "http://test.com";
 
             //act 
             var clientName = FlurlHttpExtensions.TryConfigureClientForUrl(testUrl, builder => { });

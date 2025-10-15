@@ -1,6 +1,6 @@
 using FluentAssertions;
 
-namespace AniDb.Api.Test
+namespace AniDb.Api.Http.Test
 {
     [TestClass, Ignore("Api rate limited.")]
     public class AniDbAnimeTitlesIntegrationTests
