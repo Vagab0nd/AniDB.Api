@@ -73,8 +73,8 @@ namespace AniDb.Api.Http.Test
         {
             //act
             Response<HintCollection> response = await this.target.GetUserHints(
-                TestSecrets.Username ?? throw new InvalidOperationException(),
-                TestSecrets.Password ?? throw new InvalidOperationException(),
+                TestSecrets.Username ?? TestContext.Properties["Username"]?.ToString() ?? throw new InvalidOperationException(),
+                TestSecrets.Password ?? TestContext.Properties["Password"]?.ToString() ?? throw new InvalidOperationException(),
                 this.TestContext.CancellationTokenSource.Token);
 
             //assert
