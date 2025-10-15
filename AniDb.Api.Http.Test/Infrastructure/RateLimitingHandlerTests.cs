@@ -1,16 +1,16 @@
-﻿using AniDb.Api.Infrastracture;
+﻿using System.Net;
+using AniDb.Api.Infrastracture;
 using FluentAssertions;
 using Flurl.Http;
 using Flurl.Http.Testing;
-using System.Net;
 
-namespace AniDb.Api.Test.Infrastracture
+namespace AniDb.Api.Http.Test.Infrastructure 
 {
     [TestClass]
     public class RateLimitingHandlerTests
     {
-        private RateLimitingHandler rateLimitingHandler;
-        private HttpTest httpTest;
+        private RateLimitingHandler rateLimitingHandler = null!;
+        private HttpTest httpTest = null!;
 
         [TestInitialize]
         public void TestInitialize()
