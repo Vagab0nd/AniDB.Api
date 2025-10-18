@@ -10,7 +10,7 @@
 	<RepositoryType>Git</RepositoryType>
 	<PackageTags>anidb api anime http</PackageTags>
 	<PackageReadmeFile>README.md</PackageReadmeFile>
-	<PackageReleaseNotes>Fix and extend episode contract mappings.</PackageReleaseNotes>
+	<PackageReleaseNotes>Improve episode and tag contract serialization.</PackageReleaseNotes>
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="Flurl.Http" Version="4.0.2" />
