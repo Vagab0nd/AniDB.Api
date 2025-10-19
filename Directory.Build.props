@@ -11,7 +11,7 @@
 		<Copyright>Copyright © Michał Kurek &amp; Contributors $([System.DateTime]::Now.ToString('yyyy'))</Copyright>
 		<Product>AniDb.Api</Product>
 		<!--Package options-->
-		<Version>0.7.2</Version>
+		<Version>0.7.3</Version>
 		<Authors>Michał Kurek &amp; Contributors</Authors>	
 	</PropertyGroup>
 </Project>

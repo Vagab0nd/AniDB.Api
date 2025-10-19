@@ -19,6 +19,7 @@ namespace AniDb.Api.Http.Test
         [DataRow(584)]
         [DataRow(2369)]
         [DataRow(979)]
+        [DataRow(17873)]
         public async Task GetAnime_should_return_anime(int animeId)
         {
             //act
@@ -26,6 +27,7 @@ namespace AniDb.Api.Http.Test
 
             //assert
             response.Data.Should().NotBeNull();
+            response.ErrorMessage.Should().BeNullOrEmpty();
         }
 
         [TestMethod]

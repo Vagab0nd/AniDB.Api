@@ -4,41 +4,41 @@ namespace AniDb.Api.Models.Anime
 {
     public record Tag
     {
-        [XmlAttribute(AttributeName = "id")]
+        [XmlAttribute("id")]
         public string TagId { get; init; } = null!;
 
-        [XmlAttribute(AttributeName = "parentid")]
+        [XmlAttribute("parentid")]
         public string? ParentId { get; init; }
 
-        [XmlAttribute(AttributeName = "weight")]
+        [XmlAttribute("weight")]
         public int Weight { get; init; }
 
-        [XmlAttribute(AttributeName = "localspoiler")]
+        [XmlAttribute("localspoiler")]
         public bool LocalSpoiler { get; init; }
 
-        [XmlAttribute(AttributeName = "globalspoiler")]
+        [XmlAttribute("globalspoiler")]
         public bool GlobalSpoiler { get; init; }
 
-        [XmlAttribute(AttributeName = "verified")]
+        [XmlAttribute("verified")]
         public bool Verified { get; init; }
 
-        [XmlAttribute(AttributeName = "update")]
+        [XmlAttribute("update")]
         public string? Updated
         {
-            get { return this.UpdatedDate.ToString(); }
-            init { this.UpdatedDate = value != null ? DateOnly.Parse(value) : null; }
+            get { return this.UpdatedDate?.ToString(); }
+            init { this.UpdatedDate = !string.IsNullOrWhiteSpace(value) ? DateOnly.Parse(value) : null; }
         }
 
         [XmlIgnore]
         public DateOnly? UpdatedDate { get; init; }
 
-        [XmlElement(ElementName = "name")]
+        [XmlElement("name")]
         public string Name { get; init; } = string.Empty;
 
-        [XmlElement(ElementName = "description")]
+        [XmlElement("description")]
         public string Description { get; init; } = string.Empty;
 
-        [XmlElement(ElementName = "picurl")]
+        [XmlElement("picurl")]
         public string PictureUrl { get; init; } = string.Empty;
     }
 }

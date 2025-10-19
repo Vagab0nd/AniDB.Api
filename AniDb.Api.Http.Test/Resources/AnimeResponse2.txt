@@ -1,0 +1,518 @@
+﻿<?xml version="1.0"?>
+<anime id="17873" restricted="false">
+  <type>Web</type>
+  <episodecount>3</episodecount>
+  <startdate>2023-11-01</startdate>
+  <enddate>2023-11-01</enddate>
+  <titles>
+    <title xml:lang="x-jat" type="main">Tensei Shitara Slime Datta Ken: Coleus no Yume</title>
+    <title xml:lang="x-jat" type="synonym">Tensei Shitara Slime Datta Ken: Corius no Yume</title>
+    <title xml:lang="zh-Hant" type="synonym">關於我轉生變成史萊姆這檔事 高里烏斯之夢</title>
+    <title xml:lang="ja" type="short">転スラ コリウスの夢</title>
+    <title xml:lang="x-jat" type="short">TenSura ona</title>
+    <title xml:lang="ja" type="official">転生したらスライムだった件 コリウスの夢</title>
+    <title xml:lang="en" type="official">That Time I Got Reincarnated as a Slime: Visions of Coleus</title>
+    <title xml:lang="id" type="official">Bereinkarnasi Malah Menjadi Slime: Mimpi Coleus</title>
+    <title xml:lang="zh-Hant" type="official">關於我轉生變成史萊姆這檔事 柯里烏斯之夢</title>
+    <title xml:lang="zh-Hans" type="official">关于我转生变成史莱姆这档事 彩叶草之梦</title>
+  </titles>
+  <relatedanime>
+    <anime id="14767" type="Sequel">Tensei Shitara Slime Datta Ken (2021)</anime>
+    <anime id="14526" type="Prequel">Tensei Shitara Slime Datta Ken (2019)</anime>
+  </relatedanime>
+  <url>https://www.ten-sura.com/anime/coleus</url>
+  <creators>
+    <name id="21883" type="Animation Work">8bit</name>
+    <name id="9275" type="Character Design">Ebata Ryouma</name>
+    <name id="1543" type="Series Composition">Nemoto Toshizou</name>
+    <name id="54082" type="Original Work">Mitz Vah</name>
+    <name id="54081" type="Original Work">Fuse</name>
+    <name id="54122" type="Original Work">Kawakami Taiki</name>
+    <name id="18154" type="Direction">Nakayama Atsushi</name>
+    <name id="8149" type="Music">Fujima Hitoshi</name>
+    <name id="10898" type="Chief Animation Direction">Yamazaki Hideki</name>
+    <name id="13615" type="Chief Animation Direction">Itou Tomoko</name>
+    <name id="10595" type="Chief Animation Direction">Mori Tomoko</name>
+    <name id="11422" type="Chief Animation Direction">Yoshida Wakako</name>
+    <name id="28041" type="Chief Animation Direction">Shinomin</name>
+  </creators>
+  <description>http://anidb.net/ch96309 [Rimuru] has saved the children he was teaching in the Kingdom of Engrassia, and his time as a teacher is nearly over. Then http://anidb.net/ch99971 [Yuuki], Grandmaster of the Free Union, asks him to get to the bottom of the race for the throne in the Kingdom of Coleus, which is located between Engrassia and the Holy Empire of Lubelius. So Rimuru infiltrates Coleus under the name "Satoru," and he finds a nation at the mercy of not only a battle for succession, but a web of schemes woven by demons and vampires!
+Source: Crunchyroll</description>
+  <ratings>
+    <permanent count="656">6.06</permanent>
+    <temporary count="658">7.01</temporary>
+  </ratings>
+  <picture>289228.jpg</picture>
+  <resources>
+    <resource type="1">
+      <externalentity>
+        <identifier>27167</identifier>
+      </externalentity>
+    </resource>
+    <resource type="2">
+      <externalentity>
+        <identifier>54565</identifier>
+      </externalentity>
+    </resource>
+    <resource type="4">
+      <externalentity>
+        <url>https://www.ten-sura.com/anime/coleus</url>
+      </externalentity>
+    </resource>
+    <resource type="6">
+      <externalentity>
+        <identifier>That_Time_I_Got_Reincarnated_as_a_Slime</identifier>
+      </externalentity>
+    </resource>
+    <resource type="7">
+      <externalentity>
+        <identifier>転生したらスライムだった件_(アニメ)</identifier>
+      </externalentity>
+    </resource>
+    <resource type="8">
+      <externalentity>
+        <identifier>6880</identifier>
+      </externalentity>
+    </resource>
+    <resource type="10">
+      <externalentity>
+        <identifier>25056</identifier>
+      </externalentity>
+    </resource>
+    <resource type="23">
+      <externalentity>
+        <identifier>ten_sura_anime</identifier>
+      </externalentity>
+    </resource>
+    <resource type="26">
+      <externalentity>
+        <identifier>watch?v=yc7glYMZ09g</identifier>
+      </externalentity>
+      <externalentity>
+        <identifier>watch?v=VqRrb1g342k</identifier>
+      </externalentity>
+      <externalentity>
+        <identifier>watch?v=WuIDVoKdVGU</identifier>
+      </externalentity>
+    </resource>
+    <resource type="28">
+      <externalentity>
+        <identifier>GYZJ43JMR</identifier>
+      </externalentity>
+    </resource>
+  </resources>
+  <tags>
+    <tag id="30" weight="0" localspoiler="false" globalspoiler="false" verified="true" update="2014-09-10">
+      <name>maintenance tags</name>
+      <description>These tags are used for maintenance.</description>
+    </tag>
+    <tag id="1152" parentid="2849" weight="0" localspoiler="false" globalspoiler="false" verified="true" update="2010-04-23">
+      <name>undead</name>
+    </tag>
+    <tag id="1291" parentid="6149" weight="0" localspoiler="false" globalspoiler="false" verified="true" update="2018-01-01">
+      <name>aristocrat</name>
+      <description>An aristocrat or noble is a member of the aristocracy or nobility, an upper class in feudal societies. Nobles may or may not hold any specific nobility title. For simplicity`s sake, royalty should also be considered nobility.</description>
+    </tag>
+    <tag id="1409" parentid="1152" weight="200" localspoiler="false" globalspoiler="false" verified="true" update="2019-03-20">
+      <name>vampire</name>
+      <description>A vampire is a mythological or folkloric nocturnal undead. Vampires use long fangs to penetrate the necks of people, usually young females, to drink their blood, both as a form of nourishment and to turn the targets into slaves.
+In the classic vampire stories, they are thought to have no reflection in mirrors, are able to shapeshift into bats (sometimes also wolves or some form of fog), have unlimited lifespan and superhuman strength, reflexes and senses, and may only be killed by silver bullets, silver blades, a stake through the heart, fire, or exposure to sunlight; on the other hand, they cannot tolerate garlic, holy water, or Christian crosses (sometimes expanded to religious symbols in general).
+In modern anime, these limitations are usually dropped, and they become far more powerful and fearsome opponents than usual. A human bitten, or sometimes even scratched, by a vampire typically becomes a slave, eventually dying as if poisoned, and becoming a vampire, ghoul, zombie, or other form of undead after death, often staying under the command of the vampire who originally bit them.</description>
+      <picurl>231496.jpg</picurl>
+    </tag>
+    <tag id="2094" parentid="2849" weight="300" localspoiler="false" globalspoiler="false" verified="true" update="2015-10-25">
+      <name>magic</name>
+      <description>Magic is the art of purportedly manipulating aspects of reality either by supernatural means or through knowledge of unknown occult laws.</description>
+      <picurl>178878.jpg</picurl>
+    </tag>
+    <tag id="2406" parentid="6149" weight="0" localspoiler="false" globalspoiler="false" verified="true" update="2018-09-13">
+      <name>talking animal</name>
+      <description>Talking animals are a common theme in mythology and folk tales, as well as children`s literature. Fictional talking creatures often are anthropomorphic, possessing human-like qualities but appearing as a creature. An animal that only knows how to say its name (for example, 99.9% of all http://anidb.net/t2493 [Pokemon]), are not talking animals.</description>
+    </tag>
+    <tag id="2604" weight="0" localspoiler="false" globalspoiler="false" verified="true" update="2018-11-08">
+      <name>content indicators</name>
+      <description>The content indicators branch is intended to be a less geographically specific tool than the `age rating` used by convention, for warning about things that might cause offence. Obviously there is still a degree of subjectivity involved, but hopefully it will prove useful for parents with delicate children, or children with delicate parents.
+Note: Refer to further guidance on http://wiki.anidb.net/w/Categories:Content_Indicators [the Wiki page] for how to apply tag weights for content indicators.</description>
+    </tag>
+    <tag id="2607" weight="0" localspoiler="false" globalspoiler="false" verified="true" update="2009-04-29">
+      <name>themes</name>
+      <description>Themes describe the very central elements important to the anime stories. They set the backdrop against which the protagonists must face their challenges. Be it School Life, present Daily Life, Military action, Cyberpunk, Law and Order detective work, Sports, or the Underworld. These are only but a few of the more typical backgrounds for anime plots. Add to that a Conspiracy setting with a possible tragic outcome, the Themes span most of the imaginable subject matter relevant to anime.</description>
+    </tag>
+    <tag id="2610" weight="0" localspoiler="false" globalspoiler="false" verified="true" update="2009-04-22">
+      <name>setting</name>
+      <description>The setting describes in what time and place an anime takes place. To a certain extent it describes what you can expect from the world in the anime.</description>
+    </tag>
+    <tag id="2611" weight="0" localspoiler="false" globalspoiler="false" verified="true" update="2014-09-08">
+      <name>elements</name>
+      <description>Next to Themes setting the backdrop for the protagonists in anime, there are the more detailed plot Elements that centre on character interactions: "What do characters do to each other or what is done to them?". Is it violent Action, an awe-inspiring Adventure in a foreign place, the gripping life of a Detective, a slapstick Comedy, an Ecchi Harem anime, a SciFi epic, or some Fantasy travelling adventure?</description>
+    </tag>
+    <tag id="2613" parentid="2610" weight="0" localspoiler="false" globalspoiler="false" verified="true" update="2016-09-04">
+      <name>place</name>
+      <description>The places the anime can take place in. Includes more specific places such as a country on Earth, as well as more general places such as a dystopia or a mirror world.</description>
+    </tag>
+    <tag id="2622" parentid="2841" infobox="true" weight="400" localspoiler="false" globalspoiler="false" verified="true" update="2017-12-26">
+      <name>swordplay</name>
+      <description>The act or art of using a sword or similar weapon skillfully.</description>
+      <picurl>211286.jpg</picurl>
+    </tag>
+    <tag id="2629" parentid="2613" weight="400" localspoiler="false" globalspoiler="false" verified="true" update="2012-10-16">
+      <name>desert</name>
+      <description>Setting with vast amounts of sand, merciless high temperatures, and very little water.</description>
+    </tag>
+    <tag id="2750" parentid="2604" weight="200" localspoiler="false" globalspoiler="false" verified="true" update="2018-11-08">
+      <name>violence</name>
+      <description>Violence is the use of physical force against oneself or another entity, compelling action against one`s will on pain of being hurt.
+Note: Refer to further guidance on http://wiki.anidb.net/w/Categories:Content_Indicators [the Wiki page] for how to apply tag weights for content indicators.</description>
+    </tag>
+    <tag id="2841" parentid="2611" weight="200" localspoiler="false" globalspoiler="false" verified="true" update="2017-12-26">
+      <name>action</name>
+      <description>Action anime usually involve a fairly straightforward story of good guys versus bad guys, where most disputes are resolved by using physical force. It often contains a lot of shooting, explosions and fighting.</description>
+      <picurl>211261.jpg</picurl>
+    </tag>
+    <tag id="2849" parentid="7050" infobox="true" weight="600" localspoiler="false" globalspoiler="false" verified="true" update="2005-05-07">
+      <name>fantasy</name>
+      <description>Fantasy is a genre of fiction that uses magic and other supernatural phenomena as a primary element of plot, theme, or setting. Many works within the genre take place in fictional worlds where magic is common. Fantasy is generally distinguished from science fiction and horror by the expectation that it steers clear of (pseudo-)scientific and macabre themes, respectively, though there is a great deal of overlap between the three (which are subgenres of speculative fiction).
+In popular culture, the genre of fantasy is dominated by its medievalist form, especially since the worldwide success of The Lord of the Rings books by J. R. R. Tolkien. In its broadest sense however, fantasy comprises works by many writers, artists, filmmakers, and musicians, from ancient myths and legends to many recent works embraced by a wide audience today.
+Fantasy is a vibrant area of academic study in a number of disciplines (English, cultural studies, comparative literature, history, medieval studies). Work in this area ranges widely, from the structuralist theory of Tzvetan Todorov, which emphasizes the fantastic as a liminal space, to work on the connections (political, historical, literary) between medievalism and popular culture
+Source: Wiki</description>
+      <picurl>68768.jpg</picurl>
+    </tag>
+    <tag id="2862" parentid="2607" weight="400" localspoiler="false" globalspoiler="false" verified="true" update="2018-01-21">
+      <name>friendship</name>
+      <description>The feeling of trust, kindness, and friendship between a group of high school students for example, is a central theme of this anime.</description>
+      <picurl>65691.png</picurl>
+    </tag>
+    <tag id="5821" parentid="5826" weight="0" localspoiler="false" globalspoiler="false" verified="true">
+      <name>sibling rivalry</name>
+    </tag>
+    <tag id="5826" parentid="2607" weight="0" localspoiler="false" globalspoiler="false" verified="true" update="2011-04-12">
+      <name>rivalry</name>
+      <description>Quite broadly used term describing a conflict, contest, struggle, or opposition of some sort.
+Typical examples: The mostly comedic rivalry for the love of a protagonist in a harem anime (love polygon), the more "mindless" battles between wannabe delinquents in a school fighting anime, or the struggle between good &amp; evil in an epic conflict for world domination.</description>
+    </tag>
+    <tag id="6149" parentid="30" weight="0" localspoiler="false" globalspoiler="false" verified="true" update="2014-09-10">
+      <name>TO BE MOVED TO CHARACTER</name>
+      <description>Tags under this parent tag are going to be moved to character tags and removed from the anime they`re currently assigned to. They will be blocked from the anime system once that move is complete. Please help with that job if you know what characters they should be assigned to.</description>
+    </tag>
+    <tag id="6173" weight="0" localspoiler="false" globalspoiler="false" verified="true" update="2014-09-24">
+      <name>origin</name>
+    </tag>
+    <tag id="7050" parentid="2611" weight="0" localspoiler="false" globalspoiler="false" verified="true" update="2019-04-18">
+      <name>speculative fiction</name>
+      <description>Speculative fiction is an umbrella genre encompassing fiction with certain elements that do not exist in the real world, often in the context of supernatural, futuristic or other imaginative themes. This includes, but is not limited to, science fiction, fantasy, superhero fiction, horror, utopian and dystopian fiction, fairytale fantasy, supernatural fiction, as well as combinations thereof.
+Source: Wikipedia</description>
+    </tag>
+    <tag id="7885" parentid="6173" weight="0" localspoiler="false" globalspoiler="false" verified="true" update="2021-11-07">
+      <name>Japanese production</name>
+    </tag>
+  </tags>
+  <characters>
+    <character id="96302" type="secondary cast in" update="2018-12-01">
+      <rating votes="26">7.67</rating>
+      <name>Souei</name>
+      <gender>male</gender>
+      <charactertype id="1">Character</charactertype>
+      <picture>219597.jpg</picture>
+      <seiyuu id="2575" picture="139952.jpg">Eguchi Takuya</seiyuu>
+    </character>
+    <character id="96304" type="secondary cast in" update="2020-11-27">
+      <rating votes="30">7.53</rating>
+      <name>Benimaru</name>
+      <gender>male</gender>
+      <charactertype id="1">Character</charactertype>
+      <description>He is roughly 180 cm tall.</description>
+      <picture>219596.jpg</picture>
+      <seiyuu id="34070" picture="11215.jpeg">Furukawa Makoto</seiyuu>
+    </character>
+    <character id="96306" type="main character in" update="2024-06-23">
+      <rating votes="77">8.58</rating>
+      <name>Rimuru Tempest</name>
+      <gender>male</gender>
+      <charactertype id="1">Character</charactertype>
+      <description>Rimuru is a slime who was once a human on Earth that reincarnated as a powerful slime due to certain requests he made as he died.
+While he technically does not have a sex, he identifies as a male due to his past gender, but http://anidb.net/ch96309 [the feminine body] he obtains from http://anidb.net/ch96300 [Shizu] complicates this slightly. He has the skill, Devour, which allows him to eat almost anything and obtain skills and items from the devoured object. He can even mimic the appearance of any item he has devoured.
+Source: Wikipedia</description>
+      <picture>219595.jpg</picture>
+      <seiyuu id="54819" picture="245730.jpg">Okasaki Miho</seiyuu>
+    </character>
+    <character id="96308" type="secondary cast in" update="2018-10-16">
+      <rating votes="14">7.71</rating>
+      <name>Daikenja</name>
+      <gender>none/does not apply</gender>
+      <charactertype id="1">Character</charactertype>
+      <picture>224738.jpg</picture>
+      <seiyuu id="356" picture="224408.jpg">Toyoguchi Megumi</seiyuu>
+    </character>
+    <character id="96309" type="main character in" update="2020-06-16">
+      <rating votes="122">8.53</rating>
+      <name>Rimuru Tempest</name>
+      <gender>male</gender>
+      <charactertype id="1">Character</charactertype>
+      <description>While he technically does not have a gender, Rimuru identifies as a male due to his past gender. He obtains this feminine body from http://anidb.net/ch96300 [Shizu] after devouring her.</description>
+      <picture>219594.jpg</picture>
+      <seiyuu id="54819" picture="245730.jpg">Okasaki Miho</seiyuu>
+    </character>
+    <character id="97713" type="secondary cast in" update="2018-10-19">
+      <rating votes="24">8.76</rating>
+      <name>Ranga</name>
+      <gender>male</gender>
+      <charactertype id="1">Character</charactertype>
+      <picture>224745.jpg</picture>
+      <seiyuu id="36910" picture="315490.jpg">Kobayashi Chikahiro</seiyuu>
+    </character>
+    <character id="99971" type="secondary cast in" update="2019-03-17">
+      <rating votes="12">2.98</rating>
+      <name>Kagurazaka Yuuki</name>
+      <gender>male</gender>
+      <charactertype id="1">Character</charactertype>
+      <picture>231356.jpg</picture>
+      <seiyuu id="31313" picture="266706.jpg">Hanae Natsuki</seiyuu>
+    </character>
+    <character id="109287" type="appears in" update="2020-04-10">
+      <rating votes="7">5.26</rating>
+      <name>Tiss</name>
+      <gender>female</gender>
+      <charactertype id="1">Character</charactertype>
+      <picture>245988.jpg</picture>
+      <seiyuu id="16085" picture="178446.jpg">Komatsu Mikako</seiyuu>
+    </character>
+    <character id="109288" type="appears in" update="2020-04-10">
+      <name>Jeff Segal</name>
+      <gender>male</gender>
+      <charactertype id="1">Character</charactertype>
+      <picture>245989.jpg</picture>
+      <seiyuu id="4687" picture="27301.jpg">Kinoshita Hiroyuki</seiyuu>
+    </character>
+    <character id="119764" type="secondary cast in" update="2021-10-01">
+      <rating votes="12">7.31</rating>
+      <name>Luminus Valentine</name>
+      <gender>female</gender>
+      <charactertype id="1">Character</charactertype>
+      <picture>265728.jpg</picture>
+      <seiyuu id="34901" picture="315489.jpg">Lynn</seiyuu>
+    </character>
+    <character id="122550" type="appears in" update="2022-03-03">
+      <rating votes="1">1.88</rating>
+      <name>Hiiro</name>
+      <gender>male</gender>
+      <charactertype id="1">Character</charactertype>
+      <picture>270417.jpg</picture>
+    </character>
+    <character id="125520" type="appears in" update="2022-08-17">
+      <rating votes="6">7.48</rating>
+      <name>Towa</name>
+      <gender>female</gender>
+      <charactertype id="1">Character</charactertype>
+      <picture>276224.jpg</picture>
+    </character>
+    <character id="128399" type="secondary cast in" update="2022-12-08">
+      <rating votes="7">5.59</rating>
+      <name>Violet</name>
+      <gender>female</gender>
+      <charactertype id="1">Character</charactertype>
+      <picture>281705.jpg</picture>
+      <seiyuu id="43492" picture="232251.jpg">Tomita Miyu</seiyuu>
+    </character>
+    <character id="135510" type="secondary cast in" update="2023-11-01">
+      <name>Aslan Coleus</name>
+      <gender>male</gender>
+      <charactertype id="1">Character</charactertype>
+      <picture>296075.jpg</picture>
+      <seiyuu id="263" picture="287327.jpg">Matsukaze Masaya</seiyuu>
+    </character>
+    <character id="135511" type="secondary cast in" update="2023-11-01">
+      <name>Carl</name>
+      <gender>male</gender>
+      <charactertype id="1">Character</charactertype>
+      <picture>296083.jpg</picture>
+      <seiyuu id="1692" picture="224934.jpg">Okitsu Kazuyuki</seiyuu>
+    </character>
+    <character id="135512" type="secondary cast in" update="2023-11-01">
+      <name>Gustav</name>
+      <gender>male</gender>
+      <charactertype id="1">Character</charactertype>
+      <picture>296078.jpg</picture>
+      <seiyuu id="2281" picture="249025.jpg">Katou Masayuki</seiyuu>
+    </character>
+    <character id="135513" type="secondary cast in" update="2023-11-01">
+      <name>Souther Coleus</name>
+      <gender>male</gender>
+      <charactertype id="1">Character</charactertype>
+      <picture>296076.jpg</picture>
+      <seiyuu id="24946" picture="11316.jpeg">Tamaru Atsushi</seiyuu>
+    </character>
+    <character id="135514" type="secondary cast in" update="2023-11-01">
+      <rating votes="1">6.32</rating>
+      <name>Satoru</name>
+      <gender>male</gender>
+      <charactertype id="1">Character</charactertype>
+      <picture>296074.jpg</picture>
+      <seiyuu id="202" picture="25743.jpg">Terashima Takuma</seiyuu>
+    </character>
+    <character id="135515" type="secondary cast in" update="2023-11-01">
+      <rating votes="2">6.14</rating>
+      <name>Chiffon Amadi</name>
+      <gender>female</gender>
+      <charactertype id="1">Character</charactertype>
+      <picture>296081.jpg</picture>
+      <seiyuu id="308" picture="44975.jpg">Nazuka Kaori</seiyuu>
+    </character>
+    <character id="135516" type="secondary cast in" update="2023-11-01">
+      <rating votes="3">6.60</rating>
+      <name>Zenobia Coleus</name>
+      <gender>female</gender>
+      <charactertype id="1">Character</charactertype>
+      <picture>296077.jpg</picture>
+      <seiyuu id="38978" picture="183949.jpg">Hioka Natsumi</seiyuu>
+    </character>
+    <character id="135517" type="secondary cast in" update="2023-11-01">
+      <name>Barack Amadi</name>
+      <gender>male</gender>
+      <charactertype id="1">Character</charactertype>
+      <picture>296079.jpg</picture>
+      <seiyuu id="6976" picture="158591.jpg">Komatsu Fuminori</seiyuu>
+    </character>
+    <character id="135518" type="secondary cast in" update="2023-11-01">
+      <rating votes="1">6.32</rating>
+      <name>Paulo</name>
+      <gender>male</gender>
+      <charactertype id="1">Character</charactertype>
+      <picture>296082.jpg</picture>
+      <seiyuu id="390" picture="33609.jpg">Okamoto Nobuhiko</seiyuu>
+    </character>
+    <character id="136038" type="appears in" update="2023-11-01">
+      <name>Tedron Coleus</name>
+      <gender>male</gender>
+      <charactertype id="1">Character</charactertype>
+      <picture>296084.jpg</picture>
+      <seiyuu id="61139" picture="249630.jpg">Yamaguchi Reigo</seiyuu>
+    </character>
+    <character id="136043" type="appears in" update="2023-11-01">
+      <name>Jaune</name>
+      <gender>female</gender>
+      <charactertype id="1">Character</charactertype>
+      <picture>296085.jpg</picture>
+      <seiyuu id="53526" picture="295607.jpg">Hasegawa Ikumi</seiyuu>
+    </character>
+    <character id="136044" type="appears in" update="2023-11-01">
+      <name>Blanc</name>
+      <gender>female</gender>
+      <charactertype id="1">Character</charactertype>
+      <picture>296086.jpg</picture>
+      <seiyuu id="23686" picture="224554.jpg">Uchiyama Yumi</seiyuu>
+    </character>
+    <character id="136045" type="appears in" update="2023-11-01">
+      <name>Cien</name>
+      <gender>male</gender>
+      <charactertype id="1">Character</charactertype>
+      <picture>296089.jpg</picture>
+    </character>
+    <character id="136046" type="appears in" update="2023-11-01">
+      <name>Moss</name>
+      <gender>male</gender>
+      <charactertype id="1">Character</charactertype>
+      <picture>296088.jpg</picture>
+    </character>
+    <character id="136047" type="appears in" update="2023-11-01">
+      <rating votes="2">8.16</rating>
+      <name>Chloe Aubert</name>
+      <gender>female</gender>
+      <charactertype id="1">Character</charactertype>
+      <picture>296091.jpg</picture>
+    </character>
+  </characters>
+  <episodes>
+    <episode id="271425" update="2023-10-31">
+      <epno type="1">1</epno>
+      <length>25</length>
+      <airdate>2023-11-01</airdate>
+      <rating votes="4">6.92</rating>
+      <title xml:lang="ja">コリウス国へ</title>
+      <title xml:lang="en">To Coleus</title>
+      <title xml:lang="fr">En route pour Coléus</title>
+      <title xml:lang="x-jat">Coleus Kuni e</title>
+      <summary>Yuuki asks Rimuru to investigate the Kingdom of Coleus, where a battle for succession has pitted the kingdom`s two princes against each other. Rimuru launches a covert operation to sneak into Coleus and find out what`s driving this conflict.
+Source: crunchyroll</summary>
+      <resources>
+        <resource type="28">
+          <externalentity>
+            <identifier>GQJUGVK55</identifier>
+          </externalentity>
+        </resource>
+      </resources>
+    </episode>
+    <episode id="271426" update="2023-10-31">
+      <epno type="1">2</epno>
+      <length>25</length>
+      <airdate>2023-11-01</airdate>
+      <rating votes="4">6.69</rating>
+      <title xml:lang="ja">大怪盗サトル</title>
+      <title xml:lang="en">Great Phantom Thief Satoru</title>
+      <title xml:lang="fr">Satoru le grand voleur</title>
+      <title xml:lang="x-jat">Dai Kaitou Satoru</title>
+      <summary>Aslan visits Rimuru to thank him for saving his sister, Zenobia. They discuss her illness and Souther`s behavior, and begin to suspect that the court physician, Gustav, is behind both. Rimuru dons yet another disguise to investigate further.
+Source: crunchyroll</summary>
+      <resources>
+        <resource type="28">
+          <externalentity>
+            <identifier>G50UZX5KK</identifier>
+          </externalentity>
+        </resource>
+      </resources>
+    </episode>
+    <episode id="271427" update="2023-10-31">
+      <epno type="1">3</epno>
+      <length>25</length>
+      <airdate>2023-11-01</airdate>
+      <rating votes="4">6.46</rating>
+      <title xml:lang="ja">紫と薔薇</title>
+      <title xml:lang="en">Purple and Roses</title>
+      <title xml:lang="fr">Violet et roses</title>
+      <title xml:lang="x-jat">Murasaki to Bara</title>
+      <summary>Rimuru confirms that it was Gustav who cursed Zenobia with illness. It turns out he and his accomplice, Carl, are Archdemons plotting to manifest their god using Zenobia as a vessel. Can Rimuru stop them before the Kingdom of Coleus is lost?
+Source: crunchyroll</summary>
+      <resources>
+        <resource type="28">
+          <externalentity>
+            <identifier>GWDU8EDVM</identifier>
+          </externalentity>
+        </resource>
+      </resources>
+    </episode>
+    <episode id="272771" update="2023-11-01">
+      <epno type="3">C1</epno>
+      <length>2</length>
+      <airdate>2023-11-01</airdate>
+      <rating votes="1">2.44</rating>
+      <title xml:lang="en">Opening</title>
+    </episode>
+    <episode id="272772" update="2023-11-01">
+      <epno type="3">C2</epno>
+      <length>2</length>
+      <airdate>2023-11-01</airdate>
+      <rating votes="1">2.44</rating>
+      <title xml:lang="en">Ending</title>
+    </episode>
+    <episode id="280149" update="2024-04-20">
+      <epno type="4">T1</epno>
+      <length>2</length>
+      <airdate>2023-09-27</airdate>
+      <title xml:lang="ja">PV</title>
+      <title xml:lang="en">PV (1:30)</title>
+    </episode>
+    <episode id="280150" update="2024-04-20">
+      <epno type="4">T2</epno>
+      <length>1</length>
+      <airdate>2023-10-06</airdate>
+      <title xml:lang="ja">15秒CM</title>
+      <title xml:lang="en">15 Seconds CM</title>
+    </episode>
+    <episode id="280151" update="2024-04-20">
+      <epno type="4">T3</epno>
+      <length>1</length>
+      <airdate>2023-10-31</airdate>
+      <title xml:lang="ja">Blu-Ray(特装限定版) 発売告知CM</title>
+      <title xml:lang="en">Blu-Ray (Special Limited Edition) Release Announcement Commercial (0:15)</title>
+    </episode>
+  </episodes>
+</anime>

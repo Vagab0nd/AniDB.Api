@@ -3,6 +3,7 @@ using AniDb.Api.Models.Anime;
 using AniDb.Api.Models.Common;
 using FluentAssertions;
 using Flurl.Http.Testing;
+using Flurl.Http.Xml;
 
 namespace AniDb.Api.Http.Test
 {
@@ -78,7 +79,7 @@ namespace AniDb.Api.Http.Test
             httpTest.RespondWith(xmlResponse);
 
             //act
-            Response<Anime> response = await this.target.GetAnime(17709, this.TestContext.CancellationTokenSource.Token);
+            Response<Anime> response = await this.target.GetAnime(17709, this.TestContext.CancellationToken);
 
             //assert
             response.Data?.Episodes.Should().HaveCount(16);
@@ -115,11 +116,28 @@ namespace AniDb.Api.Http.Test
             httpTest.RespondWith(xmlResponse);
 
             //act
-            var response = await this.target.GetAnime(int.MaxValue, this.TestContext.CancellationTokenSource.Token);
+            var response = await this.target.GetAnime(int.MaxValue, this.TestContext.CancellationToken);
 
             //assert
             response.Should().NotBeNull();
             response.ErrorMessage.Should().NotBeNullOrWhiteSpace();
+        }
+        
+        [TestMethod]
+        public async Task GetAnime_result_should_be_cacheable_as_xml()
+        {
+            //arrange
+            using var httpTest = new HttpTest();
+            string xmlResponse = ResourcesHelper.GetStringResource("AnimeResponse2.txt");
+            httpTest.RespondWith(xmlResponse);
+
+            //act
+            Response<Anime> response = await this.target.GetAnime(17873, this.TestContext.CancellationToken);
+            var serializedData = MicrosoftXmlSerializer.Default.Serialize(response.Data);
+            var deserializedData = MicrosoftXmlSerializer.Default.Deserialize<Anime>(serializedData);
+
+            //assert
+            deserializedData.Should().NotBeNull();
         }
 
         [TestMethod]
@@ -131,7 +149,7 @@ namespace AniDb.Api.Http.Test
             httpTest.RespondWith(xmlResponse);
 
             //act
-            var response = await this.target.GetHotAnime(this.TestContext.CancellationTokenSource.Token);
+            var response = await this.target.GetHotAnime(this.TestContext.CancellationToken);
 
             //assert
             response.Should().NotBeNull();
@@ -146,7 +164,7 @@ namespace AniDb.Api.Http.Test
             httpTest.RespondWith(xmlResponse);
 
             //act
-            var response = await this.target.GetMainPageData(this.TestContext.CancellationTokenSource.Token);
+            var response = await this.target.GetMainPageData(this.TestContext.CancellationToken);
 
             //assert
             response.Data.Should().NotBeNull();
@@ -161,7 +179,7 @@ namespace AniDb.Api.Http.Test
             httpTest.RespondWith(xmlResponse);
 
             //act
-            var response = await this.target.GetUserHints("username", "password", this.TestContext.CancellationTokenSource.Token);
+            var response = await this.target.GetUserHints("username", "password", this.TestContext.CancellationToken);
 
             //assert
             response.Data.Should().NotBeNull();
