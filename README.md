@@ -88,6 +88,7 @@ Coverage as of right now is:
 
 ## 📝 Roadmap
 
+- .Net10 support.
 - Implement UDP API.
 - Use ISO 639 language codes.
 - Add more comprehensive integration tests that check data mapping/validity
