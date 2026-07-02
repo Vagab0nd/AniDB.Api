@@ -80,6 +80,12 @@ All users of this API should employ heavy local caching.
 In case of data dumps (Anime titles) requesting the same dataset multiple times on a single day can get you banned. 
 The same goes for Http API request flooding. You should not request more than one page every two seconds.
 
+## 🔧 Requirements
+
+This library requires **.NET 10.0** or later. 
+
+> **Note**: Previous versions of this library supported .NET 8.0. If you need .NET 8.0 support, please use library version 0.7.3 or earlier.
+
 ## ☂️ Coverage
 
 Coverage as of right now is:
@@ -88,12 +94,9 @@ Coverage as of right now is:
 
 ## 📝 Roadmap
 
-- .Net10 support.
 - Implement UDP API.
 - Use ISO 639 language codes.
 - Add more comprehensive integration tests that check data mapping/validity
-- Use `DateOnly` in models when migrating to .Net7 or higher - support for `DateOnly` conversion to/from XML.
-- Use `required` keyword instead of null collapse in DTOs when migrating to .Net7 or higher.
 
 ## ➕ Contributing
 
