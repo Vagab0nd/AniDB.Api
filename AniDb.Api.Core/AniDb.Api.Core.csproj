@@ -9,7 +9,7 @@
 		<RepositoryType>Git</RepositoryType>
 		<PackageTags>anidb api anime</PackageTags>
 		<PackageReadmeFile>README.md</PackageReadmeFile>
-		<PackageReleaseNotes>-</PackageReleaseNotes>
+		<PackageReleaseNotes>Migrate to .net 10.</PackageReleaseNotes>
 	</PropertyGroup>
 	<ItemGroup>
 		<None Include="README.md">
